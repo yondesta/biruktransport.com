@@ -94,7 +94,7 @@
       <div class="col-xl-4 col-lg-3">
         <div class="logo">
           <a href="index.php">
-            <img loading="lazy" class="img-fluid" src="images/logo.png" alt="logo">
+            <img loading="lazy" class="img-fluid" src="images/logo-2.png" alt="logo">
           </a>
         </div>
       </div>

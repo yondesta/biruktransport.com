@@ -52,7 +52,7 @@
             <div class="footer-logo">
               <figure>
                 <a href="index.php">
-                  <img loading="lazy" class="img-fluid" src="images/logo-2.png" alt="medic">
+                  <img loading="lazy" class="img-fluid" src="images/logo.png" alt="medic">
                 </a>
               </figure>
             </div>
