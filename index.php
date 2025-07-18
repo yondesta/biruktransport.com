@@ -64,7 +64,7 @@ FACEBOOK: https://www.facebook.com/themefisher
 
 
 <body>
-  <div class="page-wrapper">
+  
 
   
 
@@ -92,7 +92,7 @@ FACEBOOK: https://www.facebook.com/themefisher
           <div class="content style text-center">
             <h2 class="text-white text-bold mb-2" data-animation-in="slideInLeft">Our Best Surgeons</h2>
             <p class="tag-text mb-4" data-animation-in="slideInRight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sunt animi sequi ratione quod at earum. <br> Quis quos officiis numquam!</p>
-            <a href="about.html" class="btn btn-main btn-white" data-animation-in="slideInLeft" data-duration-in="1.2">explore</a>
+            <a href="about.php" class="btn btn-main btn-white" data-animation-in="slideInLeft" data-duration-in="1.2">explore</a>
           </div>
           <!-- Slide Content End -->
         </div>
@@ -108,7 +108,7 @@ FACEBOOK: https://www.facebook.com/themefisher
           <div class="content style text-center">
             <h2 class="text-white" data-animation-in="slideInRight">We Care About Your Health</h2>
             <p class="tag-text mb-4" data-animation-in="slideInRight" data-duration-in="0.6">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            <a href="about.html" class="btn btn-main btn-white" data-animation-in="slideInRight" data-duration-in="1.2">about us</a>
+            <a href="about.php" class="btn btn-main btn-white" data-animation-in="slideInRight" data-duration-in="1.2">about us</a>
           </div>
           <!-- Slide Content End-->
         </div>
@@ -124,7 +124,7 @@ FACEBOOK: https://www.facebook.com/themefisher
           <div class="content text-center style">
             <h2 class="text-white text-bold mb-2" data-animation-in="slideInRight">Best Medical Services</h2>
             <p class="tag-text mb-4" data-animation-in="slideInLeft">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae deserunt, <br>eius pariatur minus itaque nostrum.</p>
-            <a href="about.html" class="btn btn-main btn-white" data-animation-in="slideInRight"  data-duration-in="1.2">shop now</a>
+            <a href="about.php" class="btn btn-main btn-white" data-animation-in="slideInRight"  data-duration-in="1.2">shop now</a>
           </div>
           <!-- Slide Content End -->
         </div>
@@ -149,7 +149,7 @@ FACEBOOK: https://www.facebook.com/themefisher
         <h2>24 Hour Service</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore dignissimos officia dicta suscipit
           vel eum</p>
-        <a href="service.html" class="btn btn-main">Read more</a>
+        <a href="service.php" class="btn btn-main">Read more</a>
       </div>
       <div class="col-lg-4 col-md-12 working-time item">
         <i class="fa fa-hourglass-o"></i>
@@ -180,7 +180,7 @@ FACEBOOK: https://www.facebook.com/themefisher
 							<div class="item">
 								<div class="icon-box">
 									<figure>
-										<a href="services.html"><img loading="lazy" src="images/resource/1.png" alt="features image"></a>
+										<a href="services.php"><img loading="lazy" src="images/resource/1.png" alt="features image"></a>
 									</figure>
 								</div>
 								<h3 class="mb-2">Orthopedics</h3>
@@ -193,7 +193,7 @@ FACEBOOK: https://www.facebook.com/themefisher
 							<div class="item">
 								<div class="icon-box">
 									<figure>
-										<a href="services.html">
+										<a href="services.php">
 											<img loading="lazy" src="images/resource/2.png" alt="features image">
 										</a>
 									</figure>
@@ -208,7 +208,7 @@ FACEBOOK: https://www.facebook.com/themefisher
 							<div class="item">
 								<div class="icon-box">
 									<figure>
-										<a href="services.html">
+										<a href="services.php">
 											<img loading="lazy" src="images/resource/3.png" alt="features image">
 										</a>
 									</figure>
@@ -223,7 +223,7 @@ FACEBOOK: https://www.facebook.com/themefisher
 							<div class="item">
 								<div class="icon-box">
 									<figure>
-										<a href="services.html">
+										<a href="services.php">
 											<img loading="lazy" src="images/resource/4.png" alt="features image">
 										</a>
 									</figure>
@@ -299,7 +299,7 @@ FACEBOOK: https://www.facebook.com/themefisher
                         <i class="far fa-dot-circle"></i>Teeth cleaning is part of oral hygiene and
                         involves</li>
                     </ul>
-                    <a href="services.html" class="btn btn-style-one">Read more</a>
+                    <a href="services.php" class="btn btn-style-one">Read more</a>
                   </div>
                 </div>
               </div>
@@ -335,7 +335,7 @@ FACEBOOK: https://www.facebook.com/themefisher
                         <i class="far fa-dot-circle"></i>Teeth cleaning is part of oral hygiene and
                         involves</li>
                     </ul>
-                    <a href="services.html" class="btn btn-style-one">Read more</a>
+                    <a href="services.php" class="btn btn-style-one">Read more</a>
                   </div>
                 </div>
               </div>
@@ -371,7 +371,7 @@ FACEBOOK: https://www.facebook.com/themefisher
                         <i class="far fa-dot-circle"></i>Teeth cleaning is part of oral hygiene and
                         involves</li>
                     </ul>
-                    <a href="services.html" class="btn btn-style-one">Read more</a>
+                    <a href="services.php" class="btn btn-style-one">Read more</a>
                   </div>
                 </div>
               </div>
@@ -407,7 +407,7 @@ FACEBOOK: https://www.facebook.com/themefisher
                         <i class="far fa-dot-circle"></i>Teeth cleaning is part of oral hygiene and
                         involves</li>
                     </ul>
-                    <a href="services.html" class="btn btn-style-one">Read more</a>
+                    <a href="services.php" class="btn btn-style-one">Read more</a>
                   </div>
                 </div>
               </div>
@@ -443,7 +443,7 @@ FACEBOOK: https://www.facebook.com/themefisher
                         <i class="far fa-dot-circle"></i>Teeth cleaning is part of oral hygiene and
                         involves</li>
                     </ul>
-                    <a href="services.html" class="btn btn-style-one">Read more</a>
+                    <a href="services.php" class="btn btn-style-one">Read more</a>
                   </div>
                 </div>
               </div>
@@ -473,13 +473,13 @@ FACEBOOK: https://www.facebook.com/themefisher
           <div class="item">
             <div class="inner-box">
               <div class="img_holder">
-                <a href="service.html">
+                <a href="service.php">
                   <img loading="lazy" src="images/gallery/1.jpg" alt="images" class="img-fluid">
                 </a>
               </div>
               <div class="image-content text-center">
                 <span>Better Service At Low Cost</span>
-                <a href="service.html">
+                <a href="service.php">
                   <h6>Dormitory</h6>
                 </a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
@@ -489,13 +489,13 @@ FACEBOOK: https://www.facebook.com/themefisher
           <div class="item">
             <div class="inner-box">
               <div class="img_holder">
-                <a href="service.html">
+                <a href="service.php">
                   <img loading="lazy" src="images/gallery/2.jpg" alt="images" class="img-fluid">
                 </a>
               </div>
               <div class="image-content text-center">
                 <span>Better Service At Low Cost</span>
-                <a href="service.html">
+                <a href="service.php">
                   <h6>Germs Protection</h6>
                 </a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
@@ -505,13 +505,13 @@ FACEBOOK: https://www.facebook.com/themefisher
           <div class="item">
             <div class="inner-box">
               <div class="img_holder">
-                <a href="service.html">
+                <a href="service.php">
                   <img loading="lazy" src="images/gallery/3.jpg" alt="images" class="img-fluid">
                 </a>
               </div>
               <div class="image-content text-center">
                 <span>Better Service At Low Cost</span>
-                <a href="service.html">
+                <a href="service.php">
                   <h6>Psycology</h6>
                 </a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
@@ -521,13 +521,13 @@ FACEBOOK: https://www.facebook.com/themefisher
           <div class="item">
             <div class="inner-box">
               <div class="img_holder">
-                <a href="service.html">
+                <a href="service.php">
                   <img loading="lazy" src="images/gallery/1.jpg" alt="images" class="img-fluid">
                 </a>
               </div>
               <div class="image-content text-center">
                 <span>Better Service At Low Cost</span>
-                <a href="service.html">
+                <a href="service.php">
                   <h6>Dormitory</h6>
                 </a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
@@ -537,13 +537,13 @@ FACEBOOK: https://www.facebook.com/themefisher
           <div class="item">
             <div class="inner-box">
               <div class="img_holder">
-                <a href="service.html">
+                <a href="service.php">
                   <img loading="lazy" src="images/gallery/2.jpg" alt="images" class="img-fluid">
                 </a>
               </div>
               <div class="image-content text-center">
                 <span>Better Service At Low Cost</span>
-                <a href="service.html">
+                <a href="service.php">
                   <h6>Germs Protection</h6>
                 </a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
@@ -553,13 +553,13 @@ FACEBOOK: https://www.facebook.com/themefisher
           <div class="item">
             <div class="inner-box">
               <div class="img_holder">
-                <a href="service.html">
+                <a href="service.php">
                   <img loading="lazy" src="images/gallery/3.jpg" alt="images" class="img-fluid">
                 </a>
               </div>
               <div class="image-content text-center">
                 <span>Better Service At Low Cost</span>
-                <a href="service.html">
+                <a href="service.php">
                   <h6>Psycology</h6>
                 </a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
@@ -590,7 +590,7 @@ FACEBOOK: https://www.facebook.com/themefisher
           <div class="contents text-center">
             <h4>Dr. Robert Barrethion</h4>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, aspernatur.</p>
-            <a href="appointment.html" class="btn btn-main">Book Appointment</a>
+            <a href="appointment.php" class="btn btn-main">Book Appointment</a>
           </div>
         </div>
       </div>
@@ -600,7 +600,7 @@ FACEBOOK: https://www.facebook.com/themefisher
           <div class="contents text-center">
             <h4>Dr. Marry Lou</h4>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, aspernatur.</p>
-            <a href="appointment.html" class="btn btn-main">Book Appointment</a>
+            <a href="appointment.php" class="btn btn-main">Book Appointment</a>
           </div>
         </div>
       </div>
@@ -610,7 +610,7 @@ FACEBOOK: https://www.facebook.com/themefisher
           <div class="contents text-center">
             <h4>Dr. Sansa Stark</h4>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, aspernatur.</p>
-            <a href="appointment.html" class="btn btn-main">Book Appointment</a>
+            <a href="appointment.php" class="btn btn-main">Book Appointment</a>
           </div>
         </div>
       </div>

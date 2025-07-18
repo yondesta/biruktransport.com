@@ -61,149 +61,21 @@ FACEBOOK: https://www.facebook.com/themefisher
 
 
 <body>
-  <div class="page-wrapper">
+  <?php include 'header.php'; ?>
 
   
 
 <!--header top-->
-<div class="header-top">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <div class="top-left text-center text-md-left">
-          <h6>Opening Hours : Saturday to Tuesday - 8am to 10pm</h6>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="top-right text-center text-md-right">
-          <ul class="social-links">
-            <li>
-              <a href="https://themefisher.com/" aria-label="facebook">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://themefisher.com/" aria-label="twitter">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://themefisher.com/" aria-label="google-plus">
-                <i class="fab fa-google-plus-g"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://themefisher.com/" aria-label="instagram">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://themefisher.com/" aria-label="pinterest">
-                <i class="fab fa-pinterest-p"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+
 <!--header top-->
 
 <!--Header Upper-->
-<section class="header-uper">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-xl-4 col-lg-3">
-        <div class="logo">
-          <a href="index.html">
-            <img loading="lazy" class="img-fluid" src="images/logo.png" alt="logo">
-          </a>
-        </div>
-      </div>
-      <div class="col-xl-8 col-lg-9">
-        <div class="right-side">
-          <ul class="contact-info pl-0 mb-4 mb-md-0">
-            <li class="item text-left">
-              <div class="icon-box">
-                <i class="far fa-envelope"></i>
-              </div>
-              <strong>Email</strong>
-              <br>
-              <a href="mailto:info@medic.com">
-                <span>info@medic.com</span>
-              </a>
-            </li>
-            <li class="item text-left">
-              <div class="icon-box">
-                <i class="fas fa-phone"></i>
-              </div>
-              <strong>Call Now</strong>
-              <br>
-              <span>+ (88017) - 123 - 4567</span>
-            </li>
-          </ul>
-          <div class="link-btn text-center text-lg-right">
-            <a href="contact.html" class="btn-style-one">Appoinment</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+
 <!--Header Upper-->
 
 
 <!--Main Header-->
-<nav class="navbar navbar-expand-lg navbar-dark">
-  <div class="container">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarLinks">
-      <ul class="navbar-nav">
-        <li class="nav-item @@home">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item @@about">
-          <a class="nav-link" href="about.html">About</a>
-        </li>
-        <li class="nav-item @@service">
-          <a class="nav-link" href="service.html">Service</a>
-        </li>
-        <li class="nav-item @@gallery">
-          <a class="nav-link" href="gallery.html">Gallery</a>
-        </li>
-        <li class="nav-item @@team">
-          <a class="nav-link" href="team.html">Team</a>
-        </li>
-        <li class="nav-item @@appointment">
-          <a class="nav-link" href="appointment.html">Appointment</a>
-        </li>
-        <li class="nav-item dropdown active">
-          <a class="nav-link dropdown-toggle" href="#!" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blogs</a>
 
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item active" href="blog.html">Blog</a></li>
-            <li><a class="dropdown-item activeDetails" href="blog-details.html">Blog Details</a></li>
-            <li class="dropdown dropdown-submenu dropright">
-              <a class="dropdown-item dropdown-toggle" href="#!" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu</a>
-    
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="index.html">Submenu 01</a></li>
-                <li><a class="dropdown-item" href="index.html">Submenu 02</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-item @@contact">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
 <!--End Main Header -->
 
 <!--Page Title-->
@@ -213,7 +85,7 @@ FACEBOOK: https://www.facebook.com/themefisher
             <h1>Blog</h1>
             <ul class="title-menu clearfix">
                 <li>
-                    <a href="index.html">home &nbsp;/</a>
+                    <a href="index.php">home &nbsp;/</a>
                 </li>
                 <li>Blog</li>
             </ul>
@@ -231,11 +103,11 @@ FACEBOOK: https://www.facebook.com/themefisher
           <div class="item-holder">
             <div class="image-box">
               <figure>
-                <a href="blog-details.html"><img loading="lazy" class="img-fluid" src="images/blog/5.jpg" alt=""></a>
+                <a href="blog-details.php"><img loading="lazy" class="img-fluid" src="images/blog/5.jpg" alt=""></a>
               </figure>
             </div>
             <div class="content-text">
-              <a href="blog-details.html">
+              <a href="blog-details.php">
                 <h4>A lesson in Surgery Preparedness - From Hurricane Season</h4>
               </a>
               <span>By Donult Trum / 02 January 2020</span>
@@ -243,18 +115,18 @@ FACEBOOK: https://www.facebook.com/themefisher
                 Curabitur aliquet quam
                 id dui posuere blandit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
               <div class="link-btn">
-                <a href="blog-details.html" class="btn-style-one">read more</a>
+                <a href="blog-details.php" class="btn-style-one">read more</a>
               </div>
             </div>
           </div>
           <div class="item-holder">
             <div class="image-box">
               <figure>
-                <a href="blog-details.html"><img loading="lazy" class="img-fluid" src="images/blog/6.jpg" alt=""></a>
+                <a href="blog-details.php"><img loading="lazy" class="img-fluid" src="images/blog/6.jpg" alt=""></a>
               </figure>
             </div>
             <div class="content-text">
-              <a href="blog-details.html">
+              <a href="blog-details.php">
                 <h4>To support patients recovery and improve their experiences of care.</h4>
               </a>
               <span>By James Anderson / 08 January 2020</span>
@@ -262,18 +134,18 @@ FACEBOOK: https://www.facebook.com/themefisher
                 Nulla porttitor accumsan
                 tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
               <div class="link-btn">
-                <a href="blog-details.html" class="btn-style-one">read more</a>
+                <a href="blog-details.php" class="btn-style-one">read more</a>
               </div>
             </div>
           </div>
           <div class="item-holder">
             <div class="image-box">
               <figure>
-                <a href="blog-details.html"><img loading="lazy" class="img-fluid" src="images/blog/7.jpg" alt=""></a>
+                <a href="blog-details.php"><img loading="lazy" class="img-fluid" src="images/blog/7.jpg" alt=""></a>
               </figure>
             </div>
             <div class="content-text">
-              <a href="blog-details.html">
+              <a href="blog-details.php">
                 <h4>A lesson in Surgery Preparedness - From Hurricane Season</h4>
               </a>
               <span>By Garry Moe / 12 January 2020</span>
@@ -282,18 +154,18 @@ FACEBOOK: https://www.facebook.com/themefisher
                 ut lacinia in, elementum id enim. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
               </p>
               <div class="link-btn">
-                <a href="blog-details.html" class="btn-style-one">read more</a>
+                <a href="blog-details.php" class="btn-style-one">read more</a>
               </div>
             </div>
           </div>
           <div class="item-holder">
             <div class="image-box">
               <figure>
-                <a href="blog-details.html"><img loading="lazy" class="img-fluid" src="images/blog/8.jpg" alt=""></a>
+                <a href="blog-details.php"><img loading="lazy" class="img-fluid" src="images/blog/8.jpg" alt=""></a>
               </figure>
             </div>
             <div class="content-text">
-              <a href="blog-details.html">
+              <a href="blog-details.php">
                 <h4>To support patients recovery and improve their experiences of care.</h4>
               </a>
               <span>By Luis Morris / 25 January 2020</span>
@@ -301,7 +173,7 @@ FACEBOOK: https://www.facebook.com/themefisher
                 Praesent sapien massa, convallis
                 a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
               <div class="link-btn">
-                <a href="blog-details.html" class="btn-style-one">read more</a>
+                <a href="blog-details.php" class="btn-style-one">read more</a>
               </div>
             </div>
           </div>
@@ -309,11 +181,11 @@ FACEBOOK: https://www.facebook.com/themefisher
           
           <div class="styled-pagination">
             <ul>
-              <li><a class="prev" href="blog.html"><span class="fas fa-angle-left" aria-hidden="true"></span></a></li>
-              <li><a href="blog.html" class="active">1</a></li>
-              <li><a href="blog.html">2</a></li>
-              <li><a href="blog.html">3</a></li>
-              <li><a class="next" href="blog.html"><span class="fas fa-angle-right" aria-hidden="true"></span></a></li>
+              <li><a class="prev" href="blog.php"><span class="fas fa-angle-left" aria-hidden="true"></span></a></li>
+              <li><a href="blog.php" class="active">1</a></li>
+              <li><a href="blog.php">2</a></li>
+              <li><a href="blog.php">3</a></li>
+              <li><a class="next" href="blog.php"><span class="fas fa-angle-right" aria-hidden="true"></span></a></li>
             </ul>
           </div>
         </div>
@@ -325,7 +197,7 @@ FACEBOOK: https://www.facebook.com/themefisher
             <h6>Search</h6>
           </div>
           <div class="search-box">
-            <form method="post" action="index.html">
+            <form method="post" action="index.php">
               <div class="input-group">
                 <input class="form-control" type="search" name="search" placeholder="Enter to Search" required="" autocomplete="off">
               </div>
@@ -336,24 +208,24 @@ FACEBOOK: https://www.facebook.com/themefisher
               <h6>Categories</h6>
             </div>
             <ul class="categorise-list">
-              <li><a href="blog.html">Alumni <span>(20)</span></a></li>
-              <li><a href="blog.html">Psycology <span>(4)</span></a></li>
-              <li><a href="blog.html">Sonogram <span>(2)</span></a></li>
-              <li><a href="blog.html">x-ray <span>(9)</span></a></li>
-              <li><a href="blog.html">Dental <span>(2)</span></a></li>
+              <li><a href="blog.php">Alumni <span>(20)</span></a></li>
+              <li><a href="blog.php">Psycology <span>(4)</span></a></li>
+              <li><a href="blog.php">Sonogram <span>(2)</span></a></li>
+              <li><a href="blog.php">x-ray <span>(9)</span></a></li>
+              <li><a href="blog.php">Dental <span>(2)</span></a></li>
             </ul>
           </div>
           <div class="tag-list">
             <div class="text-title">
               <h6>Tags</h6>
             </div>
-            <a href="blog.html">Dental</a>
-            <a href="blog.html">Root</a>
-            <a href="blog.html">Clean</a>
-            <a href="blog.html">Rehabilitation</a>
-            <a href="blog.html">Surgery</a>
-            <a href="blog.html">Doctor</a>
-            <a href="blog.html">Pediatric</a>
+            <a href="blog.php">Dental</a>
+            <a href="blog.php">Root</a>
+            <a href="blog.php">Clean</a>
+            <a href="blog.php">Rehabilitation</a>
+            <a href="blog.php">Surgery</a>
+            <a href="blog.php">Doctor</a>
+            <a href="blog.php">Pediatric</a>
           </div>
         </div>
       </div>
@@ -363,124 +235,7 @@ FACEBOOK: https://www.facebook.com/themefisher
 <!-- End Contact Section -->
 
 <!--footer-main-->
-<footer class="footer-main">
-  <div class="footer-top">
-    <div class="container">
-      <div class="row justify-content-between">
-        <div class="col-lg-4 mb-5 mb-lg-0">
-          <div class="about-widget">
-            <div class="footer-logo">
-              <figure>
-                <a href="index.html">
-                  <img loading="lazy" class="img-fluid" src="images/logo-2.png" alt="medic">
-                </a>
-              </figure>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, temporibus?</p>
-            <ul class="location-link">
-              <li class="item">
-                <i class="fas fa-map-marker-alt"></i>
-                <p>Modamba, NY 80021, United States</p>
-              </li>
-              <li class="item">
-                <i class="far fa-envelope" aria-hidden="true"></i>
-                <a href="mailto:support@medic.com">
-                  <p>support@medic.com</p>
-                </a>
-              </li>
-              <li class="item">
-                <i class="fas fa-phone" aria-hidden="true"></i>
-                <p>(88017) +123 4567</p>
-              </li>
-            </ul>
-            <ul class="list-inline social-icons">
-              <li class="list-inline-item"><a href="https://facebook.com/themefisher" aria-label="facebook"><i class="fab fa-facebook-f"></i></a></li>
-              <li class="list-inline-item"><a href="https://twitter.com/themefisher" aria-label="twitter"><i class="fab fa-twitter"></i></a></li>
-              <li class="list-inline-item"><a href="https://instagram.com/themefisher" aria-label="instagram"><i class="fab fa-instagram"></i></a></li>
-              <li class="list-inline-item"><a href="https://github.com/themefisher" aria-label="github"><i class="fab fa-github"></i></a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-5 mb-3 mb-md-0">
-          <h2>Services</h2>
-          <ul class="menu-link">
-            <li>
-              <a href="service.html">
-                <i class="fa fa-angle-right" aria-hidden="true"></i>Orthopadic Liabilities</a>
-            </li>
-            <li>
-              <a href="service.html">
-                <i class="fa fa-angle-right" aria-hidden="true"></i>Dental Clinic</a>
-            </li>
-            <li>
-              <a href="service.html">
-                <i class="fa fa-angle-right" aria-hidden="true"></i>Dormamu Clinic</a>
-            </li>
-            <li>
-              <a href="service.html">
-                <i class="fa fa-angle-right" aria-hidden="true"></i>Psycological Clinic</a>
-            </li>
-            <li>
-              <a href="service.html">
-                <i class="fa fa-angle-right" aria-hidden="true"></i>Gynaecological Clinic</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-7">
-          <div class="social-links">
-            <h2>Recent Posts</h2>
-            <ul>
-              <li class="item">
-                <div class="media">
-                  <div class="media-left mr-3">
-                    <a href="blog-details.html">
-                      <img loading="lazy" src="images/blog/post-thumb-small.jpg" alt="post-thumb">
-                    </a>
-                  </div>
-                  <div class="media-body">
-                    <h5><a href="blog-details.html">A lesson adip isicing</a></h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, dolorem.</p>
-                  </div>
-                </div>
-              </li>
-              <li class="item">
-                <div class="media">
-                  <div class="media-left mr-3">
-                    <a href="blog-details.html">
-                      <img loading="lazy" src="images/blog/post-thumb-small.jpg" alt="post-thumb">
-                    </a>
-                  </div>
-                  <div class="media-body">
-                    <h5><a href="blog-details.html">How to make an event</a></h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, dolorem.</p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="container clearfix">
-      <div class="copyright-text">
-        <p>&copy; Copyright 2021. Designed &amp; Developed by <a href="https://themefisher.com/">Themefisher</a></p>
-      </div>
-      <ul class="footer-bottom-link">
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="about.html">About</a>
-        </li>
-        <li>
-          <a href="contact.html">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</footer>
+<?php include 'footer.php'; ?>
 <!--End footer-main-->
 
 <!-- scroll-to-top -->

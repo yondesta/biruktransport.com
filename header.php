@@ -93,7 +93,7 @@
     <div class="row align-items-center">
       <div class="col-xl-4 col-lg-3">
         <div class="logo">
-          <a href="index.html">
+          <a href="index.php">
             <img loading="lazy" class="img-fluid" src="images/logo.png" alt="logo">
           </a>
         </div>
@@ -121,7 +121,7 @@
             </li>
           </ul>
           <div class="link-btn text-center text-lg-right">
-            <a href="contact.html" class="btn-style-one">Appoinment</a>
+            <a href="contact.php" class="btn-style-one">Appoinment</a>
           </div>
         </div>
       </div>
@@ -141,41 +141,41 @@
     <div class="collapse navbar-collapse" id="navbarLinks">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="index.php">Home</a>
         </li>
         <li class="nav-item @@about">
-          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="about.php">About</a>
         </li>
         <li class="nav-item @@service">
-          <a class="nav-link" href="service.html">Service</a>
+          <a class="nav-link" href="service.php">Service</a>
         </li>
         <li class="nav-item @@gallery">
-          <a class="nav-link" href="gallery.html">Gallery</a>
+          <a class="nav-link" href="gallery.php">Gallery</a>
         </li>
         <li class="nav-item @@team">
-          <a class="nav-link" href="team.html">Team</a>
+          <a class="nav-link" href="team.php">Team</a>
         </li>
         <li class="nav-item @@appointment">
-          <a class="nav-link" href="appointment.html">Appointment</a>
+          <a class="nav-link" href="appointment.php">Appointment</a>
         </li>
         <li class="nav-item dropdown @@blogs">
           <a class="nav-link dropdown-toggle" href="#!" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blogs</a>
 
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item @@blog" href="blog.html">Blog</a></li>
-            <li><a class="dropdown-item @@blogDetails" href="blog-details.html">Blog Details</a></li>
+            <li><a class="dropdown-item @@blog" href="blog.php">Blog</a></li>
+            <li><a class="dropdown-item @@blogDetails" href="blog-details.php">Blog Details</a></li>
             <li class="dropdown dropdown-submenu dropright">
               <a class="dropdown-item dropdown-toggle" href="#!" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu</a>
     
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="index.html">Submenu 01</a></li>
-                <li><a class="dropdown-item" href="index.html">Submenu 02</a></li>
+                <li><a class="dropdown-item" href="index.php">Submenu 01</a></li>
+                <li><a class="dropdown-item" href="index.php">Submenu 02</a></li>
               </ul>
             </li>
           </ul>
         </li>
         <li class="nav-item @@contact">
-          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="nav-link" href="contact.php">Contact</a>
         </li>
       </ul>
     </div>

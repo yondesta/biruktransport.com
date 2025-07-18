@@ -51,7 +51,7 @@
           <div class="about-widget">
             <div class="footer-logo">
               <figure>
-                <a href="index.html">
+                <a href="index.php">
                   <img loading="lazy" class="img-fluid" src="images/logo-2.png" alt="medic">
                 </a>
               </figure>
@@ -85,23 +85,23 @@
           <h2>Services</h2>
           <ul class="menu-link">
             <li>
-              <a href="service.html">
+              <a href="service.php">
                 <i class="fa fa-angle-right" aria-hidden="true"></i>Orthopadic Liabilities</a>
             </li>
             <li>
-              <a href="service.html">
+              <a href="service.php">
                 <i class="fa fa-angle-right" aria-hidden="true"></i>Dental Clinic</a>
             </li>
             <li>
-              <a href="service.html">
+              <a href="service.php">
                 <i class="fa fa-angle-right" aria-hidden="true"></i>Dormamu Clinic</a>
             </li>
             <li>
-              <a href="service.html">
+              <a href="service.php">
                 <i class="fa fa-angle-right" aria-hidden="true"></i>Psycological Clinic</a>
             </li>
             <li>
-              <a href="service.html">
+              <a href="service.php">
                 <i class="fa fa-angle-right" aria-hidden="true"></i>Gynaecological Clinic</a>
             </li>
           </ul>
@@ -113,12 +113,12 @@
               <li class="item">
                 <div class="media">
                   <div class="media-left mr-3">
-                    <a href="blog-details.html">
+                    <a href="blog-details.php">
                       <img loading="lazy" src="images/blog/post-thumb-small.jpg" alt="post-thumb">
                     </a>
                   </div>
                   <div class="media-body">
-                    <h5><a href="blog-details.html">A lesson adip isicing</a></h5>
+                    <h5><a href="blog-details.php">A lesson adip isicing</a></h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, dolorem.</p>
                   </div>
                 </div>
@@ -126,12 +126,12 @@
               <li class="item">
                 <div class="media">
                   <div class="media-left mr-3">
-                    <a href="blog-details.html">
+                    <a href="blog-details.php">
                       <img loading="lazy" src="images/blog/post-thumb-small.jpg" alt="post-thumb">
                     </a>
                   </div>
                   <div class="media-body">
-                    <h5><a href="blog-details.html">How to make an event</a></h5>
+                    <h5><a href="blog-details.php">How to make an event</a></h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, dolorem.</p>
                   </div>
                 </div>
@@ -149,13 +149,13 @@
       </div>
       <ul class="footer-bottom-link">
         <li>
-          <a href="index.html">Home</a>
+          <a href="index.php">Home</a>
         </li>
         <li>
-          <a href="about.html">About</a>
+          <a href="about.php">About</a>
         </li>
         <li>
-          <a href="contact.html">Contact</a>
+          <a href="contact.php">Contact</a>
         </li>
       </ul>
     </div>
