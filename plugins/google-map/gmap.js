@@ -3,7 +3,7 @@ window.marker = null;
 function initialize() {
   var map;
 
-  var nottingham = new google.maps.LatLng(51.507351, -0.127758);
+  var dawi_building = new google.maps.LatLng(8.96085035528968, 38.76405607970902); 
 
   var style = [{
     "featureType": "road.highway",
@@ -77,7 +77,7 @@ function initialize() {
 
   var mapOptions = {
     // SET THE CENTER
-    center: nottingham,
+    center: dawi_building,
 
     // SET THE MAP STYLE & ZOOM LEVEL
     mapTypeId: google.maps.MapTypeId.ROADMAP,

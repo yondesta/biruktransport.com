@@ -138,6 +138,14 @@
     <div class="collapse navbar-collapse" id="navbarLinks">
       <ul class="navbar-nav">
         <li class="nav-item">
+          <a class="nav-link" href=""></a>
+        <li class="nav-item">
+          <a class="nav-link" href=""></a>
+          <li class="nav-item">
+          <a class="nav-link" href=""></a>
+        <li class="nav-item">
+          <a class="nav-link" href=""></a>
+        <li class="nav-item">
           <a class="nav-link" href="index.php">Home</a>
         </li>
         <li class="nav-item @@about">
@@ -146,12 +154,7 @@
         <li class="nav-item @@service">
           <a class="nav-link" href="service.php">Service</a>
         </li>
-        <li class="nav-item @@gallery">
-          <a class="nav-link" href="gallery.php">Gallery</a>
-        </li>
-        <li class="nav-item @@team">
-          <a class="nav-link" href="team.php">Team</a>
-        </li>
+        
         <li class="nav-item @@appointment">
           <a class="nav-link" href="appointment.php">Appointment</a>
         </li>
