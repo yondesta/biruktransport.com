@@ -23,43 +23,8 @@ FACEBOOK: https://www.facebook.com/themefisher
 <html lang="zxx">
 <head>
 
-  <!-- ** Basic Page Needs ** -->
-  <meta charset="utf-8">
-  <title>Medic | Medical HTML Template</title>
-
-  <!-- ** Mobile Specific Metas ** -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Medical HTML Template">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <meta name="author" content="Themefisher">
-  <meta name="generator" content="Themefisher Medical HTML Template v1.0">
-  
-  <!-- theme meta -->
-  <meta name="theme-name" content="medic" />
-  
-  <!-- ** Plugins Needed for the Project ** -->
-  <!-- bootstrap -->
-  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
-  <!-- Slick Carousel -->
-  <link rel="stylesheet" href="plugins/slick/slick.css">
-  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
-  <!-- FancyBox -->
-  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
-  <!-- fontawesome -->
-  <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css">
-  <!-- animate.css -->
-  <link rel="stylesheet" href="plugins/animation/animate.min.css">
-  <!-- jquery-ui -->
-  <link rel="stylesheet" href="plugins/jquery-ui/jquery-ui.css">
-  <!-- timePicker -->
-  <link rel="stylesheet" href="plugins/timePicker/timePicker.css">
-  
-  <!-- Stylesheets -->
-  <link href="css/style.css" rel="stylesheet">
-  
-  <!--Favicon-->
-  <link rel="icon" href="images/favicon.png" type="image/x-icon">
-
+  <title>Home | Biruk Transport</title>
+ <?php include 'header.php'; ?>
 </head>
 
 
@@ -70,7 +35,7 @@ FACEBOOK: https://www.facebook.com/themefisher
 
 <!--header top-->
 
-  <?php include 'header.php'; ?>
+ 
   
 
 <!--header top-->
@@ -91,7 +56,7 @@ FACEBOOK: https://www.facebook.com/themefisher
           <!-- Slide Content Start -->
           <div class="content style text-center">
             <h2 class="text-white text-bold mb-2" data-animation-in="slideInLeft">WELCOME TO bIRUK TRANSPORT</h2>
-            <p class="tag-text mb-4" data-animation-in="slideInRight">Your inland transport Solution!</p>
+            <p class="tag-text mb-4" data-animation-in="slideInRight">Efficient, Reliable Import & Export Services for Every Scale.!</p>
             <a href="about.php" class="btn btn-main btn-white" data-animation-in="slideInLeft" data-duration-in="1.2">explore</a>
           </div>
           <!-- Slide Content End -->
@@ -107,8 +72,8 @@ FACEBOOK: https://www.facebook.com/themefisher
           <!-- Slide Content Start-->
           <div class="content style text-center">
             <h2 class="text-white" data-animation-in="slideInRight">Biruk Transport</h2>
-            <p class="tag-text mb-4" data-animation-in="slideInRight" data-duration-in="0.6">Your Number One Transport Solution </p>
-            <a href="about.php" class="btn btn-main btn-white" data-animation-in="slideInRight" data-duration-in="1.2">about us</a>
+            <p class="tag-text mb-4" data-animation-in="slideInRight" data-duration-in="0.6">Your Gateway to Seamless Local Transport.</p>
+            <a href="about.php" class="btn btn-main btn-white" data-animation-in="slideInRight" data-duration-in="1.2">explore</a>
           </div>
           <!-- Slide Content End-->
         </div>
@@ -122,9 +87,9 @@ FACEBOOK: https://www.facebook.com/themefisher
         <div class="col-12">
           <!-- Slide Content Start -->
           <div class="content text-center style">
-            <h2 class="text-white text-bold mb-2" data-animation-in="slideInRight">Best Transport Services</h2>
-            <p class="tag-text mb-4" data-animation-in="slideInLeft">We care about your transport materials incoming and outgoing</p>
-            <a href="about.php" class="btn btn-main btn-white" data-animation-in="slideInRight"  data-duration-in="1.2">shop now</a>
+            <h2 class="text-white text-bold mb-2" data-animation-in="slideInRight">Streamlined Transport Solutions for Local & International Trade.</h2>
+            <p class="tag-text mb-4" data-animation-in="slideInLeft">Connecting Your World: Local & Global Transport Specialists.</p>
+            <a href="about.php" class="btn btn-main btn-white" data-animation-in="slideInRight"  data-duration-in="1.2">explore</a>
           </div>
           <!-- Slide Content End -->
         </div>
@@ -135,34 +100,6 @@ FACEBOOK: https://www.facebook.com/themefisher
 
 <!--====  End of Page Slider  ====-->
 
-<section class="cta">
-  <div class="container">
-    <div class="cta-block row no-gutters">
-      <div class="col-lg-4 col-md-6 emmergency item">
-        <i class="fa fa-phone"></i>
-        <h2>Emegency Cases</h2>
-        <a href="tel:1-800-700-6200">1-800-700-6200</a>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-      </div>
-      <div class="col-lg-4 col-md-6 top-doctor item">
-        <i class="fa fa-stethoscope"></i>
-        <h2>24 Hour Service</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore dignissimos officia dicta suscipit
-          vel eum</p>
-        <a href="service.php" class="btn btn-main">Read more</a>
-      </div>
-      <div class="col-lg-4 col-md-12 working-time item">
-        <i class="fa fa-hourglass-o"></i>
-        <h2>Working Hours</h2>
-        <ul class="w-hours">
-          <li>Mon - Fri - <span>8:00 - 17:00</span></li>
-          <li>Mon - Fri - <span>8:00 - 17:00</span></li>
-          <li>Mon - Fri - <span>8:00 - 17:00</span></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!--about section-->
 <section class="feature-section section bg-gray">
@@ -171,80 +108,82 @@ FACEBOOK: https://www.facebook.com/themefisher
 			<div class="col-lg-12">
 				<div class="image-content">
 					<div class="section-title text-center">
-						<h3>Best Features <span>of Our Hospital</span></h3>
-						<p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam magni in at debitis <br> nam error officia vero tempora alias? Sunt?</p>
-					</div>
+						<h3>Best Features <span>of Our Transport</span></h3>
+						<h4>In today's interconnected world, reliable transport is the backbone of successful trade. <br>At Biruk Transport, we specialize in providing comprehensive
+            import and export transport solutions, <br>connecting your business to markets both across town and different region of the country.
+				</h4>
+            <hr>
+        <h4>The world of import and export can be complex, filled with transport hurdles, regulatory challenges, and tight deadlines. Don't let transport become a bottleneck for your business growth.
+            Biruk Transport offers a complete suite of transport services designed to overcome these challenges. From the first mile to the last, inland transport service,
+            we provide robust solutions that ensure your goods move efficiently and securely.
+            We take the burden of transport off your shoulders, allowing you to focus on what you do best.</h4>
+          </div>
 
-					<div class="row">
-						<div class="col-sm-6">
-							<div class="item">
-								<div class="icon-box">
-									<figure>
-										<a href="services.php"><img loading="lazy" src="images/resource/1.png" alt="features image"></a>
-									</figure>
-								</div>
-								<h3 class="mb-2">Orthopedics</h3>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ducimus veniam illo quibusdam pariatur
-									ex sunt, est aspernatur
-									at debitis eius vitae vel nostrum dolorem labore autem corrupti odit mollitia?</p>
-							</div>
-						</div>
-						<div class="col-sm-6">
-							<div class="item">
-								<div class="icon-box">
-									<figure>
-										<a href="services.php">
-											<img loading="lazy" src="images/resource/2.png" alt="features image">
-										</a>
-									</figure>
-								</div>
-								<h3 class="mb-2">Diaginostic</h3>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ducimus veniam illo quibusdam pariatur
-									ex sunt, est aspernatur
-									at debitis eius vitae vel nostrum dolorem labore autem corrupti odit mollitia?</p>
-							</div>
-						</div>
-						<div class="col-sm-6">
-							<div class="item">
-								<div class="icon-box">
-									<figure>
-										<a href="services.php">
-											<img loading="lazy" src="images/resource/3.png" alt="features image">
-										</a>
-									</figure>
-								</div>
-								<h3 class="mb-2">Psycology</h3>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ducimus veniam illo quibusdam pariatur
-									ex sunt, est aspernatur
-									at debitis eius vitae vel nostrum dolorem labore autem corrupti odit mollitia?</p>
-							</div>
-						</div>
-						<div class="col-sm-6">
-							<div class="item">
-								<div class="icon-box">
-									<figure>
-										<a href="services.php">
-											<img loading="lazy" src="images/resource/4.png" alt="features image">
-										</a>
-									</figure>
-								</div>
-								<h3 class="mb-2">General Treatment</h3>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ducimus veniam illo quibusdam pariatur
-									ex sunt, est aspernatur
-									at debitis eius vitae vel nostrum dolorem labore autem corrupti odit mollitia?</p>
-							</div>
-						</div>
-					</div>
+					
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-<!--End about section-->
+
+
+<section class="cta">
+  <div class="container">
+   
+    <h1 class="section-title">Our Services</h1>
+    
+    <div class="cta-block row no-gutters">
+      <div class="col-lg-4 col-md-6 working-time item">
+        <h2>Import Transport</h2>
+        <ul class="w-hours">
+          <li>1x20ft Container</li>
+          <li>2x20ft Container</li>
+          <li>1x40ft Container</li>
+          <li>Breakbulk Cargo</li>
+          <li>Lowbed 12M  truck</li>
+          <li>Lowbed 24M truck</li>
+          <li>Project Cargo</li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-6 working-time item">
+        
+        <h2>Export cargo</h2>
+        <ul class="w-hours">
+            <li>1x20ft container</li>
+            <li>2x20ft container</li>
+            <li>1x40ft container</li>
+            <li>Breakbulk cargo</li>
+        </ul>
+        
+        
+      </div>
+      
+      <div class="col-lg-4 col-md-12 working-time item">
+        
+        <h2>Local transport</h2>
+        <ul class="w-hours">
+          <li>Mcontainer transport</li>
+          <li>Isuzu</li>
+          <li>FSR</li>
+          <li>Pickup</li>
+          <li>Halftrack 200QTL</li>
+          <li>Full truck 400QTL<br>  </li>
+        </ul>
+        <h2>
+      <a href="service.php" class="btn btn-main btn-white">Read more</a></h2>
+       </div>
+      
+    </div>
+  </div>
+</section>
+
 
 <!--Start about us area-->
 <section class="service-tab-section section">
   <div class="outer-box clearfix">
+    <div class="section-title text-center">
+    <h3>Why you Choose Us!</h3>
+    </div>
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -252,19 +191,19 @@ FACEBOOK: https://www.facebook.com/themefisher
           <div class="tabs mb-5">
             <ul class="nav nav-tabs justify-content-center" id="aboutTab" role="tablist">
               <li class="nav-item" role="presentation">
-                <a class="nav-link active" id="dormitory-tab" data-toggle="tab" href="#dormitory" role="tab" aria-controls="dormitory" aria-selected="true">dormitory</a>
+                <a class="nav-link active" id="dormitory-tab" data-toggle="tab" href="#dormitory" role="tab" aria-controls="dormitory" aria-selected="true">Reliable Network</a>
               </li>
               <li class="nav-item" role="presentation">
-                <a class="nav-link" id="orthopedic-tab" data-toggle="tab" href="#orthopedic" role="tab" aria-controls="orthopedic" aria-selected="false">orthopedic</a>
+                <a class="nav-link" id="orthopedic-tab" data-toggle="tab" href="#orthopedic" role="tab" aria-controls="orthopedic" aria-selected="false">Expert Team</a>
               </li>
               <li class="nav-item" role="presentation">
-                <a class="nav-link" id="sonogram-tab" data-toggle="tab" href="#sonogram" role="tab" aria-controls="sonogram" aria-selected="false">sonogram</a>
+                <a class="nav-link" id="sonogram-tab" data-toggle="tab" href="#sonogram" role="tab" aria-controls="sonogram" aria-selected="false">Transparent Pricing</a>
               </li>
               <li class="nav-item" role="presentation">
-                <a class="nav-link" id="x-ray-tab" data-toggle="tab" href="#x-ray" role="tab" aria-controls="x-ray" aria-selected="false">x-ray</a>
+                <a class="nav-link" id="x-ray-tab" data-toggle="tab" href="#x-ray" role="tab" aria-controls="x-ray" aria-selected="false">On-Time Delivery:</a>
               </li>
               <li class="nav-item" role="presentation">
-                <a class="nav-link" id="diagnostic-tab" data-toggle="tab" href="#diagnostic" role="tab" aria-controls="diagnostic" aria-selected="false">diagnostic</a>
+                <a class="nav-link" id="diagnostic-tab" data-toggle="tab" href="#diagnostic" role="tab" aria-controls="diagnostic" aria-selected="false">Customer Satisfaction</a>
               </li>
             </ul>
           </div>
@@ -273,32 +212,21 @@ FACEBOOK: https://www.facebook.com/themefisher
             <div class="service-box tab-pane fade show active" id="dormitory">
               <div class="row">
                 <div class="col-lg-6">
-                  <img loading="lazy" class="img-fluid" src="images/services/service-one.jpg" alt="service-image">
+                  <img loading="lazy" class="img-fluid" src="images/services/service-1.jpg" alt="service-image">
                 </div>
                 <div class="col-lg-6">
                   <div class="contents">
                     <div class="section-title">
-                      <h3>dormitory</h3>
+                      <h3>Strong Local and Global Connections</h3>
                     </div>
                     <div class="text">
-                      <p>The implant fixture is first placed, so that it ilikely to osseointegrate,
-                        then a dental prosthetic is added. then a
-                        dental prosthetic is added.then a dental pros- thetic is added.</p>
-                      <p>The implant fixture is first placed, so that it ilikely to osseointegrate,
-                        then a dental prosthetic is added. then a dental
-                        prosthetic is added.then a dental pros- thetic is added.</p>
+                      <p>We've meticulously built and nurtured an expansive network of trusted partners,
+                      carriers, and agents, both domestically here in Ethiopia and Djibouti.</p>
+                      <p>This means whether your cargo needs to move from Ethiopia to Djibouti, or from
+                      Djibouti to Ethiopia, we have the established connections to ensure smooth, secure,
+                      and timely transit, every single time. Your goods are always on
+                      the most efficient route.</p>
                     </div>
-                    <ul class="content-list">
-                      <li>
-                        <i class="far fa-dot-circle"></i>Whitening is among the most popular dental
-                      </li>
-                      <li>
-                        <i class="far fa-dot-circle"></i>Teeth cleaning is part of oral hygiene and
-                        involves</li>
-                      <li>
-                        <i class="far fa-dot-circle"></i>Teeth cleaning is part of oral hygiene and
-                        involves</li>
-                    </ul>
                     <a href="services.php" class="btn btn-style-one">Read more</a>
                   </div>
                 </div>
@@ -309,33 +237,22 @@ FACEBOOK: https://www.facebook.com/themefisher
             <div class="service-box tab-pane fade" id="orthopedic">
               <div class="row">
                 <div class="col-lg-6">
-                  <img loading="lazy" class="img-fluid" src="images/services/service-two.jpg" alt="service-image">
+                  <img loading="lazy" class="img-fluid" src="images/services/service-2.jpg" alt="service-image">
                 </div>
                 <div class="col-lg-6">
                   <div class="contents">
                     <div class="section-title">
-                      <h3>orthopedic</h3>
+                      <h3>Experienced in All Aspects of Transport</h3>
                     </div>
                     <div class="text">
-                      <p>The implant fixture is first placed, so that it ilikely to osseointegrate,
-                        then a dental prosthetic is added.
-                        then a dental prosthetic is added.then a dental pros- thetic is added.</p>
-                      <p>The implant fixture is first placed, so that it ilikely to osseointegrate,
-                        then a dental prosthetic is added.
-                        then a dental prosthetic is added.then a dental pros- thetic is added.</p>
+                      <p>Our team isn't just experienced; they are seasoned professionals passionate about Transport.
+                      With deep expertise in international trade regulations, customs procedures, local distribution
+                      challenges, and freight optimization, they anticipate potential issues before they arise.</p>
+                      <p>From meticulous planning to swift problem-solving, our dedicated specialists manage every
+                      detail of your shipment with precision, providing expert guidance and proactive communication
+                      throughout the journey.</p>
                     </div>
-                    <ul class="content-list">
-                      <li>
-                        <i class="far fa-dot-circle"></i>Whitening is among the most popular dental
-                      </li>
-                      <li>
-                        <i class="far fa-dot-circle"></i>Teeth cleaning is part of oral hygiene and
-                        involves</li>
-                      <li>
-                        <i class="far fa-dot-circle"></i>Teeth cleaning is part of oral hygiene and
-                        involves</li>
-                    </ul>
-                    <a href="services.php" class="btn btn-style-one">Read more</a>
+                     <a href="services.php" class="btn btn-style-one">Read more</a>
                   </div>
                 </div>
               </div>
@@ -345,32 +262,19 @@ FACEBOOK: https://www.facebook.com/themefisher
             <div class="service-box tab-pane fade" id="sonogram">
               <div class="row">
                 <div class="col-lg-6">
-                  <img loading="lazy" class="img-fluid" src="images/services/service-three.jpg" alt="service-image">
+                  <img loading="lazy" class="img-fluid" src="images/services/service-3.jpg" alt="service-image">
                 </div>
                 <div class="col-lg-6">
                   <div class="contents">
                     <div class="section-title">
-                      <h3>sonogram</h3>
+                      <h3>Clear Costs, No Hidden Fees</h3>
                     </div>
                     <div class="text">
-                      <p>The implant fixture is first placed, so that it ilikely to osseointegrate,
-                        then a dental prosthetic is added.
-                        then a dental prosthetic is added.then a dental pros- thetic is added.</p>
-                      <p>The implant fixture is first placed, so that it ilikely to osseointegrate,
-                        then a dental prosthetic is added.
-                        then a dental prosthetic is added.then a dental pros- thetic is added.</p>
+                      <p>We believe in honest and straightforward business. You'll receive comprehensive,
+                      competitive quotes with no hidden surcharges or unexpected costs. We provide clear
+                      breakdowns, allowing you to budget effectively and understand exactly what you're paying for. </p>
+                      <p>Our commitment to transparency ensures you can make informed decisions with complete confidence.</p>
                     </div>
-                    <ul class="content-list">
-                      <li>
-                        <i class="far fa-dot-circle"></i>Whitening is among the most popular dental
-                      </li>
-                      <li>
-                        <i class="far fa-dot-circle"></i>Teeth cleaning is part of oral hygiene and
-                        involves</li>
-                      <li>
-                        <i class="far fa-dot-circle"></i>Teeth cleaning is part of oral hygiene and
-                        involves</li>
-                    </ul>
                     <a href="services.php" class="btn btn-style-one">Read more</a>
                   </div>
                 </div>
@@ -381,32 +285,20 @@ FACEBOOK: https://www.facebook.com/themefisher
             <div class="service-box tab-pane fade" id="x-ray">
               <div class="row">
                 <div class="col-lg-6">
-                  <img loading="lazy" class="img-fluid" src="images/services/service-four.jpg" alt="service-image">
+                  <img loading="lazy" class="img-fluid" src="images/services/service-4.jpg" alt="service-image">
                 </div>
                 <div class="col-lg-6">
                   <div class="contents">
                     <div class="section-title">
-                      <h3>x-ray</h3>
+                      <h3>Commitment to Punctuality!</h3>
                     </div>
                     <div class="text">
-                      <p>The implant fixture is first placed, so that it ilikely to osseointegrate,
-                        then a dental prosthetic is added.
-                        then a dental prosthetic is added.then a dental pros- thetic is added.</p>
-                      <p>The implant fixture is first placed, so that it ilikely to osseointegrate,
-                        then a dental prosthetic is added.
-                        then a dental prosthetic is added.then a dental pros- thetic is added.</p>
+                      <p>Time is money, and we respect both. Our operations are optimized for efficiency,
+                      leveraging advanced tracking and strategic planning to meet your deadlines.</p>
+                      <p>We understand the critical importance of timely delivery for your supply chain
+                      and customer satisfaction. When we promise a delivery window, we work relentlessly
+                      to uphold it, ensuring your goods arrive precisely when and where they're needed.</p>
                     </div>
-                    <ul class="content-list">
-                      <li>
-                        <i class="far fa-dot-circle"></i>Whitening is among the most popular dental
-                      </li>
-                      <li>
-                        <i class="far fa-dot-circle"></i>Teeth cleaning is part of oral hygiene and
-                        involves</li>
-                      <li>
-                        <i class="far fa-dot-circle"></i>Teeth cleaning is part of oral hygiene and
-                        involves</li>
-                    </ul>
                     <a href="services.php" class="btn btn-style-one">Read more</a>
                   </div>
                 </div>
@@ -417,32 +309,21 @@ FACEBOOK: https://www.facebook.com/themefisher
             <div class="service-box tab-pane fade" id="diagnostic">
               <div class="row">
                 <div class="col-lg-6">
-                  <img loading="lazy" class="img-fluid" src="images/services/service-five.jpg" alt="service-image">
+                  <img loading="lazy" class="img-fluid" src="images/services/service-5.jpg" alt="service-image">
                 </div>
                 <div class="col-lg-6">
                   <div class="contents">
                     <div class="section-title">
-                      <h3>diagnostic</h3>
+                      <h3>Your Success is Our Priority!</h3>
                     </div>
                     <div class="text">
-                      <p>The implant fixture is first placed, so that it ilikely to osseointegrate,
-                        then a dental prosthetic is added.
-                        then a dental prosthetic is added.then a dental pros- thetic is added.</p>
-                      <p>The implant fixture is first placed, so that it ilikely to osseointegrate,
-                        then a dental prosthetic is added.
-                        then a dental prosthetic is added.then a dental pros- thetic is added.</p>
+                      <p>We don't just move cargo; we build partnerships. Your business objectives
+                      are at the heart of our service. From the moment you contact us, you'll experience
+                      a responsive, flexible, and personalized approach.</p>
+                      <p>We listen to your unique needs, adapt our services accordingly, and go the extra
+                      mile to ensure your complete satisfaction. Your success in trade, both local and international, is
+                      the ultimate measure of our own.</p>
                     </div>
-                    <ul class="content-list">
-                      <li>
-                        <i class="far fa-dot-circle"></i>Whitening is among the most popular dental
-                      </li>
-                      <li>
-                        <i class="far fa-dot-circle"></i>Teeth cleaning is part of oral hygiene and
-                        involves</li>
-                      <li>
-                        <i class="far fa-dot-circle"></i>Teeth cleaning is part of oral hygiene and
-                        involves</li>
-                    </ul>
                     <a href="services.php" class="btn btn-style-one">Read more</a>
                   </div>
                 </div>
@@ -464,8 +345,12 @@ FACEBOOK: https://www.facebook.com/themefisher
       <h3>Provided
         <span>Services</span>
       </h3>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. qui suscipit atque <br>
-        fugiat officia corporis rerum eaque neque totam animi, sapiente culpa. Architecto!</p>
+      <p>Connecting your business to markets
+      near and far, we offer robust import and
+      export transport services tailored to your
+      specific needs. Trust us for reliable domestic
+      deliveries and comprehensive international freight solutions that bridge
+      distances and ensure your cargo arrives on time, every time.</p>
     </div>
     <div class="row">
       <div class="col-lg-12">
@@ -474,13 +359,13 @@ FACEBOOK: https://www.facebook.com/themefisher
             <div class="inner-box">
               <div class="img_holder">
                 <a href="service.php">
-                  <img loading="lazy" src="images/gallery/1.jpg" alt="images" class="img-fluid">
+                  <img loading="lazy" src="images/gallery/one.jpg" alt="images" class="img-fluid">
                 </a>
               </div>
               <div class="image-content text-center">
                 <span>Better Service At Low Cost</span>
                 <a href="service.php">
-                  <h6>Dormitory</h6>
+                  <h6>Biruk Transport</h6>
                 </a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
               </div>
@@ -490,13 +375,13 @@ FACEBOOK: https://www.facebook.com/themefisher
             <div class="inner-box">
               <div class="img_holder">
                 <a href="service.php">
-                  <img loading="lazy" src="images/gallery/2.jpg" alt="images" class="img-fluid">
+                  <img loading="lazy" src="images/gallery/two.jpg" alt="images" class="img-fluid">
                 </a>
               </div>
               <div class="image-content text-center">
                 <span>Better Service At Low Cost</span>
                 <a href="service.php">
-                  <h6>Germs Protection</h6>
+                  <h6>Biruk Transport</h6>
                 </a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
               </div>
@@ -506,13 +391,13 @@ FACEBOOK: https://www.facebook.com/themefisher
             <div class="inner-box">
               <div class="img_holder">
                 <a href="service.php">
-                  <img loading="lazy" src="images/gallery/3.jpg" alt="images" class="img-fluid">
+                  <img loading="lazy" src="images/gallery/three.jpg" alt="images" class="img-fluid">
                 </a>
               </div>
               <div class="image-content text-center">
                 <span>Better Service At Low Cost</span>
                 <a href="service.php">
-                  <h6>Psycology</h6>
+                  <h6>Biruk Transport</h6>
                 </a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
               </div>
@@ -522,13 +407,13 @@ FACEBOOK: https://www.facebook.com/themefisher
             <div class="inner-box">
               <div class="img_holder">
                 <a href="service.php">
-                  <img loading="lazy" src="images/gallery/1.jpg" alt="images" class="img-fluid">
+                  <img loading="lazy" src="images/gallery/four.jpg" alt="images" class="img-fluid">
                 </a>
               </div>
               <div class="image-content text-center">
                 <span>Better Service At Low Cost</span>
                 <a href="service.php">
-                  <h6>Dormitory</h6>
+                  <h6>Biruk Transport</h6>
                 </a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
               </div>
@@ -538,13 +423,13 @@ FACEBOOK: https://www.facebook.com/themefisher
             <div class="inner-box">
               <div class="img_holder">
                 <a href="service.php">
-                  <img loading="lazy" src="images/gallery/2.jpg" alt="images" class="img-fluid">
+                  <img loading="lazy" src="images/gallery/five.jpg" alt="images" class="img-fluid">
                 </a>
               </div>
               <div class="image-content text-center">
                 <span>Better Service At Low Cost</span>
                 <a href="service.php">
-                  <h6>Germs Protection</h6>
+                  <h6>Biruk Transport</h6>
                 </a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
               </div>
@@ -554,13 +439,13 @@ FACEBOOK: https://www.facebook.com/themefisher
             <div class="inner-box">
               <div class="img_holder">
                 <a href="service.php">
-                  <img loading="lazy" src="images/gallery/3.jpg" alt="images" class="img-fluid">
+                  <img loading="lazy" src="images/gallery/six.jpg" alt="images" class="img-fluid">
                 </a>
               </div>
               <div class="image-content text-center">
                 <span>Better Service At Low Cost</span>
                 <a href="service.php">
-                  <h6>Psycology</h6>
+                  <h6>Biruk Transport</h6>
                 </a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
               </div>
@@ -577,40 +462,38 @@ FACEBOOK: https://www.facebook.com/themefisher
 <section class="team-section section">
   <div class="container">
     <div class="section-title text-center">
-      <h3>Our Expert
-        <span>Doctors</span>
+      <h3>Our
+        <span>Team Members</span>
       </h3>
-      <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem illo, rerum
-        <br>natus nobis deleniti doloremque minima odit voluptatibus ipsam animi?</p>
     </div>
     <div class="row justify-content-center">
       <div class="col-lg-4 col-md-6">
         <div class="team-member">
-          <img loading="lazy" src="images/team/doctor-2.jpg" alt="doctor" class="img-fluid">
+          <img loading="lazy" src="images/team/team1.jpg" alt="doctor" class="img-fluid">
           <div class="contents text-center">
-            <h4>Dr. Robert Barrethion</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, aspernatur.</p>
-            <a href="appointment.php" class="btn btn-main">Book Appointment</a>
+            <h4>Biruk  neguse</h4>
+            <p>Founder and CEO<br>biruk.nigusse@bruktransport.com</p>
+            <a href="mailto:biruk.nigusse@bruktransport.com" class="btn btn-main">Send Message</a>
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6">
         <div class="team-member">
-          <img loading="lazy" src="images/team/doctor-lab-3.jpg" alt="doctor" class="img-fluid">
+          <img loading="lazy" src="images/team/team2.jpg" alt="doctor" class="img-fluid">
           <div class="contents text-center">
-            <h4>Dr. Marry Lou</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, aspernatur.</p>
-            <a href="appointment.php" class="btn btn-main">Book Appointment</a>
+            <h4>Asnake abebe</h4>
+            <p>Founder & Chief Operation Manager<br>asenakeabebe@bruktransport.com</p>
+            <a href="mailto:asenakeabebe@bruktransport.com" class="btn btn-main">Send Message</a>
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6">
         <div class="team-member">
-          <img loading="lazy" src="images/team/event-2.jpg" alt="doctor" class="img-fluid">
+          <img loading="lazy" src="images/team/team3.jpg" alt="doctor" class="img-fluid">
           <div class="contents text-center">
-            <h4>Dr. Sansa Stark</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, aspernatur.</p>
-            <a href="appointment.php" class="btn btn-main">Book Appointment</a>
+            <h4>Temesgen taye</h4>
+            <p>Founder, Administration and Marketing Manager<br>temesgentaye@bruktransport.com</p>
+            <a href="mailto:temesgentaye@bruktransport.com" class="btn btn-main">Send Message</a>
           </div>
         </div>
       </div>
@@ -619,144 +502,7 @@ FACEBOOK: https://www.facebook.com/themefisher
 </section>
 <!--End team section-->
 
-<!--testimonial-section-->
-<section class="testimonial-section" style="background: url(images/testimonials/1.jpg);">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="section-title text-center">
-          <h3>What Our
-            <span>Patients Says</span>
-          </h3>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="testimonial-carousel">
-          <!--Slide Item-->
-          <div class="slide-item">
-            <div class="inner-box text-center">
-              <div class="image-box">
-                <figure>
-                  <img loading="lazy" src="images/testimonials/1.png" alt="">
-                </figure>
-              </div>
-              <h6>Adam Rose</h6>
-              <p class="mb-0">Neque porro quisquam est, qui dolorem ipsum quia consectetur, dolor sit amet, consectetur, numquam Lorem
-                ipsum dolor sit amet consectetur adipisicing elit. Molestias, at?</p>
-            </div>
-          </div>
-          <!--Slide Item-->
-          <div class="slide-item">
-            <div class="inner-box text-center">
-              <div class="image-box">
-                <figure>
-                  <img loading="lazy" src="images/testimonials/2.png" alt="">
-                </figure>
-              </div>
-              <h6>David Warner</h6>
-              <p class="mb-0">Neque porro quisquam est, qui dolorem ipsum quia consectetur, dolor sit amet, consectetur, numquam Lorem
-                ipsum dolor sit amet consectetur adipisicing elit. Molestias, at?</p>
-            </div>
-          </div>
-          <!--Slide Item-->
-          <div class="slide-item">
-            <div class="inner-box text-center">
-              <div class="image-box">
-                <figure>
-                  <img loading="lazy" src="images/testimonials/3.png" alt="">
-                </figure>
-              </div>
-              <h6>Amy Adams</h6>
-              <p class="mb-0">Neque porro quisquam est, qui dolorem ipsum quia consectetur, dolor sit amet, consectetur, numquam Lorem
-                ipsum dolor sit amet consectetur adipisicing elit. Molestias, at?</p>
-            </div>
-          </div>
-          <!--Slide Item-->
-          <div class="slide-item">
-            <div class="inner-box text-center">
-              <div class="image-box">
-                <figure>
-                  <img loading="lazy" src="images/testimonials/1.png" alt="">
-                </figure>
-              </div>
-              <h6>Adam Rose</h6>
-              <p class="mb-0">Neque porro quisquam est, qui dolorem ipsum quia consectetur, dolor sit amet, consectetur, numquam Lorem
-                ipsum dolor sit amet consectetur adipisicing elit. Molestias, at?</p>
-            </div>
-          </div>
-          <!--Slide Item-->
-          <div class="slide-item">
-            <div class="inner-box text-center">
-              <div class="image-box">
-                <figure>
-                  <img loading="lazy" src="images/testimonials/2.png" alt="">
-                </figure>
-              </div>
-              <h6>David Warner</h6>
-              <p class="mb-0">Neque porro quisquam est, qui dolorem ipsum quia consectetur, dolor sit amet, consectetur, numquam Lorem
-                ipsum dolor sit amet consectetur adipisicing elit. Molestias, at?</p>
-            </div>
-          </div>
-          <!--Slide Item-->
-          <div class="slide-item">
-            <div class="inner-box text-center">
-              <div class="image-box">
-                <figure>
-                  <img loading="lazy" src="images/testimonials/3.png" alt="">
-                </figure>
-              </div>
-              <h6>Amy Adams</h6>
-              <p class="mb-0">Neque porro quisquam est, qui dolorem ipsum quia consectetur, dolor sit amet, consectetur, numquam Lorem
-                ipsum dolor sit amet consectetur adipisicing elit. Molestias, at?</p>
-            </div>
-          </div>
-          <!--Slide Item-->
-          <div class="slide-item">
-            <div class="inner-box text-center">
-              <div class="image-box">
-                <figure>
-                  <img loading="lazy" src="images/testimonials/1.png" alt="">
-                </figure>
-              </div>
-              <h6>Adam Rose</h6>
-              <p class="mb-0">Neque porro quisquam est, qui dolorem ipsum quia consectetur, dolor sit amet, consectetur, numquam Lorem
-                ipsum dolor sit amet consectetur adipisicing elit. Molestias, at?</p>
-            </div>
-          </div>
-          <!--Slide Item-->
-          <div class="slide-item">
-            <div class="inner-box text-center">
-              <div class="image-box">
-                <figure>
-                  <img loading="lazy" src="images/testimonials/2.png" alt="">
-                </figure>
-              </div>
-              <h6>David Warner</h6>
-              <p class="mb-0">Neque porro quisquam est, qui dolorem ipsum quia consectetur, dolor sit amet, consectetur, numquam Lorem
-                ipsum dolor sit amet consectetur adipisicing elit. Molestias, at?</p>
-            </div>
-          </div>
-          <!--Slide Item-->
-          <div class="slide-item">
-            <div class="inner-box text-center">
-              <div class="image-box">
-                <figure>
-                  <img loading="lazy" src="images/testimonials/3.png" alt="">
-                </figure>
-              </div>
-              <h6>Amy Adams</h6>
-              <p class="mb-0">Neque porro quisquam est, qui dolorem ipsum quia consectetur, dolor sit amet, consectetur, numquam Lorem
-                ipsum dolor sit amet consectetur adipisicing elit. Molestias, at?</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!--End testimonial-section-->
+
 
 <!-- Contact Section -->
 <section class="appoinment-section section">
@@ -773,21 +519,16 @@ FACEBOOK: https://www.facebook.com/themefisher
         <div class="card-header" role="tab" id="headingOne">
           <h4 class="card-title">
             <a role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Why Should I choose Medical Health
+              Why Should I choose Biruk Transport
             </a>
           </h4>
         </div>
         <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordionGroup">
           <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-            officia aute,
-            non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-            tempor,
-            sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-            helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-            vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
-            haven't
-            heard of them accusamus labore sustainable VHS.
+            You should choose us because we turn complex logistics into seamless solutions. We leverage deep industry
+            experience and a customer-centric approach to provide tailored import, export, and local transport services.
+            With us, you gain a trusted partner committed to meticulous planning, proactive communication, and delivering
+            your goods with the utmost care and precision, wherever they need to go.
           </div>
         </div>
       </div>
@@ -796,21 +537,15 @@ FACEBOOK: https://www.facebook.com/themefisher
           <h4 class="card-title">
             <a class="collapsed" role="button" data-toggle="collapse" href="#collapseTwo"
               aria-expanded="false" aria-controls="collapseTwo">
-              What are the Centre’s visiting hours?
+              What types of goods do you transport?
             </a>
           </h4>
         </div>
         <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordionGroup">
           <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-            officia aute,
-            non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-            tempor,
-            sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-            helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-            vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
-            haven't
-            heard of them accusamus labore sustainable VHS.
+            We handle a wide variety of cargo, from general goods and commercial
+            shipments to perishable goods, machinery, textiles.
+            Please contact us to discuss your specific cargo needs.
           </div>
         </div>
       </div>
@@ -819,21 +554,15 @@ FACEBOOK: https://www.facebook.com/themefisher
           <h4 class="card-title">
             <a class="collapsed" role="button" data-toggle="collapse" href="#collapseThree"
               aria-expanded="false" aria-controls="collapseThree">
-              How many visitors are allowed?
+              What if my cargo is delayed or damaged?
             </a>
           </h4>
         </div>
         <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordionGroup">
           <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-            officia aute,
-            non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-            tempor,
-            sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-            helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-            vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
-            haven't
-            heard of them accusamus labore sustainable VHS.
+            While we strive for flawless service, unforeseen issues can occur. In such cases, our
+            dedicated team will promptly inform you, investigate the cause, and work to resolve it
+            efficiently. We also advise on cargo insurance options to protect your goods against loss or damage during transit.
           </div>
         </div>
       </div>
@@ -859,9 +588,10 @@ FACEBOOK: https://www.facebook.com/themefisher
         </div>
         <div class="form-group">
           <select class="form-control" name="subject">
-            <option>Departments</option>
-            <option>Diagnostic</option>
-            <option>Psychological</option>
+            <option>Service Type</option>
+            <option>Import Transport</option>
+            <option>Export cargo</option>
+            <option>Local transport</option>
           </select>
         </div>
       </div>
@@ -873,13 +603,7 @@ FACEBOOK: https://www.facebook.com/themefisher
           <input class="form-control" type="text" name="Date" placeholder="Date" required="" id="datepicker" autocomplete="off">
           <i class="fa fa-calendar" aria-hidden="true"></i>
         </div>
-        <div class="form-group">
-          <select class="form-control" name="subject">
-            <option>Doctor</option>
-            <option>Diagnostic</option>
-            <option>Psychological</option>
-          </select>
-        </div>
+        
       </div>
       <div class="col-md-12">
         <div class="form-group">

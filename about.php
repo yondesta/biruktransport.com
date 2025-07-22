@@ -23,45 +23,13 @@ FACEBOOK: https://www.facebook.com/themefisher
 <html lang="zxx">
 <head>
 
-  <!-- ** Basic Page Needs ** -->
-  <meta charset="utf-8">
-  <title>Medic | Medical HTML Template</title>
-
-  <!-- ** Mobile Specific Metas ** -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Medical HTML Template">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <meta name="author" content="Themefisher">
-  <meta name="generator" content="Themefisher Medical HTML Template v1.0">
-  
-  <!-- ** Plugins Needed for the Project ** -->
-  <!-- bootstrap -->
-  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
-  <!-- Slick Carousel -->
-  <link rel="stylesheet" href="plugins/slick/slick.css">
-  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
-  <!-- FancyBox -->
-  <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
-  <!-- fontawesome -->
-  <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css">
-  <!-- animate.css -->
-  <link rel="stylesheet" href="plugins/animation/animate.min.css">
-  <!-- jquery-ui -->
-  <link rel="stylesheet" href="plugins/jquery-ui/jquery-ui.css">
-  <!-- timePicker -->
-  <link rel="stylesheet" href="plugins/timePicker/timePicker.css">
-  
-  <!-- Stylesheets -->
-  <link href="css/style.css" rel="stylesheet">
-  
-  <!--Favicon-->
-  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+  <?php include 'header.php'; ?>
 
 </head>
 
 
 <body>
-  <?php include 'header.php'; ?>
+  
 
   
 
@@ -99,16 +67,18 @@ FACEBOOK: https://www.facebook.com/themefisher
   <div class="container">
     <div class="row">
       <div class="col-lg-6">
-        <img loading="lazy" src="images/services/service-one.jpg" class="responsive" alt="story">
+        <img loading="lazy" src="images/services/about.jpg" class="responsive" alt="story">
       </div>
       <div class="col-lg-6">
         <div class="story-content">
           <h2>Our Story</h2>
           <h5 class="tagline">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, minima. Nemo impedit fuga nostrum expedita sint dicta ullam quam et harum velit saepe"</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus totam ducimus est vero, officiis,
-              placeat optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aliquam nesciunt fugit optio
-              illum aut. consectetur adipisicing elit. Neque assumenda, est quam perferendis
-              expedita autem?</p>
+            <p>Our company was established in 2023 by a group of innovative entrepreneurs who aimed to address everyday challenges with creative solutions. With a small yet passionate team,
+            we embarked on a journey to make a meaningful impact in our industry.
+            Though our journey has just begun, we are focused on rapid growth and establishing a strong foothold in the market. Our initial offerings are designed to meet the evolving needs
+            of our customers, and we are committed to expanding our service in the near future.
+            With a strong foundation laid in our first year, we are excited about the future. Our commitment to innovation, sustainability, and customer satisfaction will drive our
+            growth as we work to make a positive impact in our industry and beyond. We look forward to building a legacy of success that reflects our values and vision./p>
             <h6>Mission</h6>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam nihil dolorum beatae consequatur mollitia
               iure?</p>

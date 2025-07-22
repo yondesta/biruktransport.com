@@ -1,11 +1,8 @@
 <!DOCTYPE html>
-<html lang="zxx">
-<head>
 
   <!-- ** Basic Page Needs ** -->
   <meta charset="utf-8">
-  <title>Medic | Medical HTML Template</title>
-
+  
   <!-- ** Mobile Specific Metas ** -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="Medical HTML Template">
@@ -39,10 +36,10 @@
   <!--Favicon-->
   <link rel="icon" href="images/favicon.png" type="image/x-icon">
 
-</head>
 
 
-<body>
+
+
   <div class="page-wrapper">
   
 <div class="header-top">
@@ -107,8 +104,8 @@
               </div>
               <strong>Email</strong>
               <br>
-              <a href="mailto:info@medic.com">
-                <span>info@medic.com</span>
+              <a href="mailto:contact@biruktransport.com">
+                <span>contact@biruktransport.com</span>
               </a>
             </li>
             <li class="item text-left">
@@ -117,7 +114,7 @@
               </div>
               <strong>Call Now</strong>
               <br>
-              <span>+ (88017) - 123 - 4567</span>
+              <span>+(251) - 911 - 314885</span>
             </li>
           </ul>
           <div class="link-btn text-center text-lg-right">
@@ -181,5 +178,4 @@
     </div>
   </div>
 </nav>
-</body>
-</html>
+

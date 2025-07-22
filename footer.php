@@ -56,21 +56,28 @@
                 </a>
               </figure>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, temporibus?</p>
             <ul class="location-link">
               <li class="item">
                 <i class="fas fa-map-marker-alt"></i>
-                <p>Modamba, NY 80021, United States</p>
+                <p>Saris Road, Dawi Tower, 5th floor, Addis Ababa, Ethiopia</p>
               </li>
               <li class="item">
                 <i class="far fa-envelope" aria-hidden="true"></i>
-                <a href="mailto:support@medic.com">
-                  <p>support@medic.com</p>
+                <a href="contact@biruktransport.com">
+                  <p>contact@biruktransport.com</p>
                 </a>
               </li>
               <li class="item">
                 <i class="fas fa-phone" aria-hidden="true"></i>
-                <p>(88017) +123 4567</p>
+                <p> +251 911 31 4885</p>
+                </li>
+              <li class="item">
+                <i class="fas fa-phone" aria-hidden="true"></i>
+                <p> +251 925 24 9190</p>
+              </li>
+              <li class="item">
+                <i class="fas fa-phone" aria-hidden="true"></i>
+                <p>+251 913 73 7398</p>
               </li>
             </ul>
             <ul class="list-inline social-icons">
@@ -86,23 +93,15 @@
           <ul class="menu-link">
             <li>
               <a href="service.php">
-                <i class="fa fa-angle-right" aria-hidden="true"></i>Orthopadic Liabilities</a>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>Import Transport</a>
             </li>
             <li>
               <a href="service.php">
-                <i class="fa fa-angle-right" aria-hidden="true"></i>Dental Clinic</a>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>Export cargo</a>
             </li>
             <li>
               <a href="service.php">
-                <i class="fa fa-angle-right" aria-hidden="true"></i>Dormamu Clinic</a>
-            </li>
-            <li>
-              <a href="service.php">
-                <i class="fa fa-angle-right" aria-hidden="true"></i>Psycological Clinic</a>
-            </li>
-            <li>
-              <a href="service.php">
-                <i class="fa fa-angle-right" aria-hidden="true"></i>Gynaecological Clinic</a>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>Local transport</a>
             </li>
           </ul>
         </div>
@@ -114,7 +113,7 @@
                 <div class="media">
                   <div class="media-left mr-3">
                     <a href="blog-details.php">
-                      <img loading="lazy" src="images/blog/post-thumb-small.jpg" alt="post-thumb">
+                      <img loading="lazy" src="images/blog/post-thumb-smalljpg" alt="post-thumb">
                     </a>
                   </div>
                   <div class="media-body">
@@ -127,7 +126,7 @@
                 <div class="media">
                   <div class="media-left mr-3">
                     <a href="blog-details.php">
-                      <img loading="lazy" src="images/blog/post-thumb-small.jpg" alt="post-thumb">
+                      <img loading="lazy" src="images/blog/post-thumb-smalljpg" alt="post-thumb">
                     </a>
                   </div>
                   <div class="media-body">
@@ -145,7 +144,7 @@
   <div class="footer-bottom">
     <div class="container clearfix">
       <div class="copyright-text">
-        <p>&copy; Copyright 2021. Designed &amp; Developed by <a href="https://themefisher.com/">Themefisher</a></p>
+        <p>&copy; Copyright 2025 @ Biruk Transport. Designed &amp; Developed by <a href="https://biruktransport.com/">Yonny Computer</a></p>
       </div>
       <ul class="footer-bottom-link">
         <li>
