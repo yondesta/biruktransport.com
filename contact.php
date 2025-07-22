@@ -76,7 +76,7 @@ FACEBOOK: https://www.facebook.com/themefisher
             <i class="far fa-map"></i>
             <div class="media-body">
               <h3>Location</h3>
-              <p>PO Box 16122 Collins Street West <br>Victoria 8007 Canada</p>
+              <p>Saris Road, Dawi Tower, 5th floor,  <br>Addis Ababa, Ethiopia</p>
             </div>
           </div>
           <!-- Phone -->
@@ -85,8 +85,9 @@ FACEBOOK: https://www.facebook.com/themefisher
             <div class="media-body">
               <h3>Phone</h3>
               <p>
-                (+48) 564-334-21-22-34
-                <br>(+48) 564-334-21-22-38
+                (+251)  911 31 4885
+                <br>(+251)  913 73 7398
+                <br>(+251)  925 24 9190
               </p>
             </div>
           </div>
@@ -96,8 +97,8 @@ FACEBOOK: https://www.facebook.com/themefisher
             <div class="media-body">
               <h3>Email</h3>
               <p>
-                info@templatepath.com
-                <br>info@cleanxer.com
+                contact@biruktransport.com
+                <br>support@biruktransport.com
               </p>
             </div>
           </div>

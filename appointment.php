@@ -52,7 +52,7 @@ FACEBOOK: https://www.facebook.com/themefisher
 <!--End Main Header -->
 
 <!--Page Title-->
-<section class="page-title text-center" style="background-image:url(images/background/3.jpg);">
+<section class="page-title text-center" style="background-image:url(images/background/appoint.jpg);">
     <div class="container">
         <div class="title-text">
             <h1>appointment</h1>
@@ -87,9 +87,10 @@ FACEBOOK: https://www.facebook.com/themefisher
                 </div>
                 <div class="form-group">
                   <select class="form-control" name="subject">
-                    <option>Departments</option>
-                    <option>Diagnostic</option>
-                    <option>Psychological</option>
+                    <option>Service Type</option>
+                    <option>Import Transport</option>
+                    <option>Export cargo</option>
+                    <option>Local transport</option>
                   </select>
                 </div>
               </div>
@@ -100,13 +101,6 @@ FACEBOOK: https://www.facebook.com/themefisher
                 <div class="form-group">
                   <input class="form-control" type="text" name="Date" placeholder="Date" required="" id="datepicker" autocomplete="off">
                   <i class="fa fa-calendar" aria-hidden="true"></i>
-                </div>
-                <div class="form-group">
-                  <select class="form-control" name="subject">
-                    <option>Doctor</option>
-                    <option>Diagnostic</option>
-                    <option>Psychological</option>
-                  </select>
                 </div>
               </div>
               <div class="col-md-12">
@@ -124,7 +118,7 @@ FACEBOOK: https://www.facebook.com/themefisher
       <div class="col-lg-6 mb-4 mb-lg-0 order-0 order-lg-1">
         <div class="appointment-image-holder ml-0 ml-lg-4">
           <figure>
-            <img loading="lazy" class="w-100" src="images/background/appoinment.jpg" alt="Appointment">
+            <img loading="lazy" class="w-100" src="images/background/appoint2.jpg" alt="Appointment">
           </figure>
         </div>
       </div>
@@ -137,40 +131,39 @@ FACEBOOK: https://www.facebook.com/themefisher
 <section class="team-section section">
   <div class="container">
     <div class="section-title text-center">
-      <h3>Our Expert
-        <span>Doctors</span>
+      <h3>Meet Our Team
+        <span>Members</span>
       </h3>
-      <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem illo, rerum
-        <br>natus nobis deleniti doloremque minima odit voluptatibus ipsam animi?</p>
+      
     </div>
     <div class="row justify-content-center">
       <div class="col-lg-4 col-md-6">
         <div class="team-member">
-          <img loading="lazy" src="images/team/doctor-2.jpg" alt="doctor" class="img-fluid">
+          <img loading="lazy" src="images/team/team-1.jpg" alt="doctor" class="img-fluid">
           <div class="contents text-center">
-            <h4>Dr. Robert Barrethion</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, aspernatur.</p>
-            <a href="appointment.php" class="btn btn-main">Book Appointment</a>
+            <h4>Biruk  neguse</h4>
+            <p>Founder and CEO<br>biruk.nigusse@bruktransport.com</p>
+            <a href="mailto:biruk.nigusse@bruktransport.com" class="btn btn-main">Make Appointment</a>
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6">
         <div class="team-member">
-          <img loading="lazy" src="images/team/doctor-lab-3.jpg" alt="doctor" class="img-fluid">
+          <img loading="lazy" src="images/team/team-2.jpg" alt="doctor" class="img-fluid">
           <div class="contents text-center">
-            <h4>Dr. Marry Lou</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, aspernatur.</p>
-            <a href="appointment.php" class="btn btn-main">Book Appointment</a>
+            <h4>Asnake abebe</h4>
+            <p>Founder & Chief Operation Manager<br>asenakeabebe@bruktransport.com</p>
+            <a href="mailto:asenakeabebe@bruktransport.com" class="btn btn-main">Book Appointment</a>
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6">
         <div class="team-member">
-          <img loading="lazy" src="images/team/event-2.jpg" alt="doctor" class="img-fluid">
+          <img loading="lazy" src="images/team/team-3.jpg" alt="doctor" class="img-fluid">
           <div class="contents text-center">
-            <h4>Dr. Sansa Stark</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, aspernatur.</p>
-            <a href="appointment.php" class="btn btn-main">Book Appointment</a>
+            <h4>Temesgen taye</h4>
+            <p>Founder, Administration and Marketing Manager<br>temesgentaye@bruktransport.com</p>
+            <a href="mailto:temesgentaye@bruktransport.com" class="btn btn-main">Book Appointment</a>
           </div>
         </div>
       </div>

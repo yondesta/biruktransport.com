@@ -49,7 +49,7 @@ FACEBOOK: https://www.facebook.com/themefisher
 <!--End Main Header -->
 
 <!--Page Title-->
-<section class="page-title text-center" style="background-image:url(images/background/3.jpg);">
+<section class="page-title text-center" style="background-image:url(images/background/service.jpg);">
     <div class="container">
         <div class="title-text">
             <h1>service</h1>
@@ -69,17 +69,16 @@ FACEBOOK: https://www.facebook.com/themefisher
     <div class="row">
       <div class="col-lg-6 mb-5 mb-lg-0">
         <div class="content-block">
-          <h2>Clinical And <br>Medical Education</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eius optio repellendus quasi nisi vitae
-            laboriosam explicabo eligendi sapiente in.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, dolorum esse tempora id architecto
-            laboriosam.
+          <h2>Biruk Transport <br>Services we Offer</h2>
+          <p>We offer end-to-end freight and cargo delivery
+          solutions across Ethiopia, tailored to meet the diverse needs of businesses and individuals.
+          Our services are fast, reliable, and supported by modern logistics infrastructure.
           </p>
           <ul>
-            <li><i class="fas fa-caret-right"></i>vitae laboriosam explicabo eligendi sapiente</li>
-            <li><i class="fas fa-caret-right"></i>consectetur adipisicing elit. Beatae</li>
-            <li><i class="fas fa-caret-right"></i>dolorum esse tempora id architecto</li>
-            <li><i class="fas fa-caret-right"></i>optio repellendus quasi nisi vitae</li>
+            <li><i class="fas fa-caret-right"></i>Import Transport</li>
+            <li><i class="fas fa-caret-right"></i>Export cargo</li>
+            <li><i class="fas fa-caret-right"></i>Local transport</li>
+            <li><i class="fas fa-caret-right"></i>Full truck 400QTL</li>
           </ul>
           <a href="appointment.php" class="btn btn-style-one">Appoint</a>
         </div>
@@ -92,21 +91,14 @@ FACEBOOK: https://www.facebook.com/themefisher
                 <div class="card-header" role="tab" id="headingOne">
                   <h4 class="card-title">
                     <a role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Why Should I choose Medical Health
+                      Van Trucks
                     </a>
                   </h4>
                 </div>
                 <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordionGroup">
                   <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-                    officia aute,
-                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                    tempor,
-                    sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                    helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-                    vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
-                    haven't
-                    heard of them accusamus labore sustainable VHS.
+                    Van trucks available for local transporting raw materials, packing materials & finished goods within a city or short distances.
+                    Typically used for loads up to 10 tons.
                   </div>
                 </div>
               </div>
@@ -115,21 +107,13 @@ FACEBOOK: https://www.facebook.com/themefisher
                   <h4 class="card-title">
                     <a class="collapsed" role="button" data-toggle="collapse" href="#collapseTwo"
                       aria-expanded="false" aria-controls="collapseTwo">
-                      What are the Centre’s visiting hours?
+                      Flatbed Trucks
                     </a>
                   </h4>
                 </div>
                 <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordionGroup">
                   <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-                    officia aute,
-                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                    tempor,
-                    sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                    helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-                    vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
-                    haven't
-                    heard of them accusamus labore sustainable VHS.
+                    Flatbed trucks are suitable for transporting container 20 feet & 40 feet ranging from 10 to 25 tons, Open top, no sides or roof.
                   </div>
                 </div>
               </div>
@@ -138,21 +122,29 @@ FACEBOOK: https://www.facebook.com/themefisher
                   <h4 class="card-title">
                     <a class="collapsed" role="button" data-toggle="collapse" href="#collapseThree"
                       aria-expanded="false" aria-controls="collapseThree">
-                      How many visitors are allowed?
+                      Semi-Trailers
                     </a>
                   </h4>
                 </div>
                 <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordionGroup">
                   <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-                    officia aute,
-                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                    tempor,
-                    sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                    helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-                    vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
-                    haven't
-                    heard of them accusamus labore sustainable VHS.
+                    Semi-trailers can handle heavier loads, typically between 20 to 40 tons Bulk goods, large shipments, and intermodal transport.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" role="tab" id="headingThree">
+                  <h4 class="card-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapseThree"
+                      aria-expanded="false" aria-controls="collapseThree">
+                      Low beds
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordionGroup">
+                  <div class="card-body">
+                    For the project cargos, large equipment’s, oversized cargo which need expendable low beds up to 24 M & more, heavy machinery.
+                    These are typically reserved for industrial and construction equipment.
                   </div>
                 </div>
               </div>
@@ -164,39 +156,7 @@ FACEBOOK: https://www.facebook.com/themefisher
   </div>
 </section>
 
-<section class="section pt-0">
-  <div class="container service-box">
-    <div class="row">
-      <div class="col-lg-6">
-        <img loading="lazy" class="img-fluid" src="images/services/service-one.jpg" alt="service-image">
-      </div>
-      <div class="col-lg-6">
-        <div class="contents">
-          <div class="section-title">
-            <h3>pulmonary</h3>
-          </div>
-          <div class="text">
-            <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental prosthetic
-              is added.
-              then a dental prosthetic is added.then a dental pros- thetic is added.</p>
-            <p>The implant fixture is first placed, so that it ilikely to osseointegrate, then a dental prosthetic
-              is added.
-              then a dental prosthetic is added.then a dental pros- thetic is added.</p>
-          </div>
-          <ul class="content-list">
-            <li>
-              <i class="far fa-check-circle"></i>Whitening is among the most popular dental</li>
-            <li>
-              <i class="far fa-check-circle"></i>Teeth cleaning is part of oral hygiene and involves</li>
-            <li>
-              <i class="far fa-check-circle"></i>Teeth cleaning is part of oral hygiene and involves</li>
-          </ul>
-          <a href="service.php" class="btn btn-style-one">Read more</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+
 
 <!--Service Section-->
 <section class="service-section bg-gray section">
@@ -205,8 +165,12 @@ FACEBOOK: https://www.facebook.com/themefisher
       <h3>Provided
         <span>Services</span>
       </h3>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. qui suscipit atque <br>
-        fugiat officia corporis rerum eaque neque totam animi, sapiente culpa. Architecto!</p>
+      <p>Connecting your business to markets
+      near and far, we offer robust import and
+      export transport services tailored to your
+      specific needs. Trust us for reliable domestic
+      deliveries and comprehensive international freight solutions that bridge
+      distances and ensure your cargo arrives on time, every time.</p>
     </div>
     <div class="row">
       <div class="col-lg-12">
@@ -215,13 +179,13 @@ FACEBOOK: https://www.facebook.com/themefisher
             <div class="inner-box">
               <div class="img_holder">
                 <a href="service.php">
-                  <img loading="lazy" src="images/gallery/1.jpg" alt="images" class="img-fluid">
+                  <img loading="lazy" src="images/gallery/one.jpg" alt="images" class="img-fluid">
                 </a>
               </div>
               <div class="image-content text-center">
                 <span>Better Service At Low Cost</span>
                 <a href="service.php">
-                  <h6>Dormitory</h6>
+                  <h6>Biruk Transport</h6>
                 </a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
               </div>
@@ -231,13 +195,13 @@ FACEBOOK: https://www.facebook.com/themefisher
             <div class="inner-box">
               <div class="img_holder">
                 <a href="service.php">
-                  <img loading="lazy" src="images/gallery/2.jpg" alt="images" class="img-fluid">
+                  <img loading="lazy" src="images/gallery/two.jpg" alt="images" class="img-fluid">
                 </a>
               </div>
               <div class="image-content text-center">
                 <span>Better Service At Low Cost</span>
                 <a href="service.php">
-                  <h6>Germs Protection</h6>
+                  <h6>Biruk Transport</h6>
                 </a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
               </div>
@@ -247,13 +211,13 @@ FACEBOOK: https://www.facebook.com/themefisher
             <div class="inner-box">
               <div class="img_holder">
                 <a href="service.php">
-                  <img loading="lazy" src="images/gallery/3.jpg" alt="images" class="img-fluid">
+                  <img loading="lazy" src="images/gallery/three.jpg" alt="images" class="img-fluid">
                 </a>
               </div>
               <div class="image-content text-center">
                 <span>Better Service At Low Cost</span>
                 <a href="service.php">
-                  <h6>Psycology</h6>
+                  <h6>Biruk Transport</h6>
                 </a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
               </div>
@@ -263,13 +227,13 @@ FACEBOOK: https://www.facebook.com/themefisher
             <div class="inner-box">
               <div class="img_holder">
                 <a href="service.php">
-                  <img loading="lazy" src="images/gallery/1.jpg" alt="images" class="img-fluid">
+                  <img loading="lazy" src="images/gallery/four.jpg" alt="images" class="img-fluid">
                 </a>
               </div>
               <div class="image-content text-center">
                 <span>Better Service At Low Cost</span>
                 <a href="service.php">
-                  <h6>Dormitory</h6>
+                  <h6>Biruk Transport</h6>
                 </a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
               </div>
@@ -279,13 +243,13 @@ FACEBOOK: https://www.facebook.com/themefisher
             <div class="inner-box">
               <div class="img_holder">
                 <a href="service.php">
-                  <img loading="lazy" src="images/gallery/2.jpg" alt="images" class="img-fluid">
+                  <img loading="lazy" src="images/gallery/five.jpg" alt="images" class="img-fluid">
                 </a>
               </div>
               <div class="image-content text-center">
                 <span>Better Service At Low Cost</span>
                 <a href="service.php">
-                  <h6>Germs Protection</h6>
+                  <h6>Biruk Transport</h6>
                 </a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
               </div>
@@ -295,13 +259,13 @@ FACEBOOK: https://www.facebook.com/themefisher
             <div class="inner-box">
               <div class="img_holder">
                 <a href="service.php">
-                  <img loading="lazy" src="images/gallery/3.jpg" alt="images" class="img-fluid">
+                  <img loading="lazy" src="images/gallery/six.jpg" alt="images" class="img-fluid">
                 </a>
               </div>
               <div class="image-content text-center">
                 <span>Better Service At Low Cost</span>
                 <a href="service.php">
-                  <h6>Psycology</h6>
+                  <h6>Biruk Transport</h6>
                 </a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
               </div>
