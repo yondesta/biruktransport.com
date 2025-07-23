@@ -143,7 +143,7 @@ FACEBOOK: https://www.facebook.com/themefisher
           <div class="contents text-center">
             <h4>Biruk  neguse</h4>
             <p>Founder and CEO<br>biruk.nigusse@bruktransport.com</p>
-            <a href="mailto:biruk.nigusse@bruktransport.com" class="btn btn-main">Make Appointment</a>
+            <a href="mailto:biruk.nigusse@biruktransport.com" class="btn btn-main">Make Appointment</a>
           </div>
         </div>
       </div>
@@ -153,7 +153,7 @@ FACEBOOK: https://www.facebook.com/themefisher
           <div class="contents text-center">
             <h4>Asnake abebe</h4>
             <p>Founder & Chief Operation Manager<br>asenakeabebe@bruktransport.com</p>
-            <a href="mailto:asenakeabebe@bruktransport.com" class="btn btn-main">Book Appointment</a>
+            <a href="mailto:asnakeabebe@biruktransport.com" class="btn btn-main">Book Appointment</a>
           </div>
         </div>
       </div>
@@ -163,7 +163,7 @@ FACEBOOK: https://www.facebook.com/themefisher
           <div class="contents text-center">
             <h4>Temesgen taye</h4>
             <p>Founder, Administration and Marketing Manager<br>temesgentaye@bruktransport.com</p>
-            <a href="mailto:temesgentaye@bruktransport.com" class="btn btn-main">Book Appointment</a>
+            <a href="mailto:temesgentaye@biruktransport.com" class="btn btn-main">Book Appointment</a>
           </div>
         </div>
       </div>

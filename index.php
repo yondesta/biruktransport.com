@@ -363,11 +363,11 @@ FACEBOOK: https://www.facebook.com/themefisher
                 </a>
               </div>
               <div class="image-content text-center">
-                <span>Better Service At Low Cost</span>
+                <span>Better Service At competitive price</span>
                 <a href="service.php">
                   <h6>Biruk Transport</h6>
                 </a>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
+                <p>RORO transport</p>
               </div>
             </div>
           </div>
@@ -379,11 +379,11 @@ FACEBOOK: https://www.facebook.com/themefisher
                 </a>
               </div>
               <div class="image-content text-center">
-                <span>Better Service At Low Cost</span>
+                <span>Better Service At competitive price</span>
                 <a href="service.php">
                   <h6>Biruk Transport</h6>
                 </a>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
+                <p>RORO transport</p>
               </div>
             </div>
           </div>
@@ -395,11 +395,11 @@ FACEBOOK: https://www.facebook.com/themefisher
                 </a>
               </div>
               <div class="image-content text-center">
-                <span>Better Service At Low Cost</span>
+                <span>Better Service At competitive price</span>
                 <a href="service.php">
                   <h6>Biruk Transport</h6>
                 </a>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
+                <p>OOG transport</p>
               </div>
             </div>
           </div>
@@ -411,11 +411,11 @@ FACEBOOK: https://www.facebook.com/themefisher
                 </a>
               </div>
               <div class="image-content text-center">
-                <span>Better Service At Low Cost</span>
+                <span>Better Service At competitive price</span>
                 <a href="service.php">
                   <h6>Biruk Transport</h6>
                 </a>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
+                <p>1x20ft transport</p>
               </div>
             </div>
           </div>
@@ -427,11 +427,11 @@ FACEBOOK: https://www.facebook.com/themefisher
                 </a>
               </div>
               <div class="image-content text-center">
-                <span>Better Service At Low Cost</span>
+                <span>Better Service At competitive price</span>
                 <a href="service.php">
                   <h6>Biruk Transport</h6>
                 </a>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
+                <p>1x40ft transport</p>
               </div>
             </div>
           </div>
@@ -443,11 +443,43 @@ FACEBOOK: https://www.facebook.com/themefisher
                 </a>
               </div>
               <div class="image-content text-center">
-                <span>Better Service At Low Cost</span>
+                <span>Better Service At competitive price</span>
                 <a href="service.php">
                   <h6>Biruk Transport</h6>
                 </a>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, vero.</p>
+                <p>Flate rack transport</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="inner-box">
+              <div class="img_holder">
+                <a href="service.php">
+                  <img loading="lazy" src="images/gallery/seven.jpg" alt="images" class="img-fluid">
+                </a>
+              </div>
+              <div class="image-content text-center">
+                <span>Better Service At competitive price</span>
+                <a href="service.php">
+                  <h6>Biruk Transport</h6>
+                </a>
+                <p>Open top container</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="inner-box">
+              <div class="img_holder">
+                <a href="service.php">
+                  <img loading="lazy" src="images/gallery/eight.jpg" alt="images" class="img-fluid">
+                </a>
+              </div>
+              <div class="image-content text-center">
+                <span>Better Service At competitive price</span>
+                <a href="service.php">
+                  <h6>Biruk Transport</h6>
+                </a>
+                <p>Open top container</p>
               </div>
             </div>
           </div>
@@ -472,18 +504,18 @@ FACEBOOK: https://www.facebook.com/themefisher
           <img loading="lazy" src="images/team/team1.jpg" alt="doctor" class="img-fluid">
           <div class="contents text-center">
             <h4>Biruk  neguse</h4>
-            <p>Founder and CEO<br>biruk.nigusse@bruktransport.com</p>
-            <a href="mailto:biruk.nigusse@bruktransport.com" class="btn btn-main">Send Message</a>
+            <p>Founder and CEO<br>biruk.nigusse@biruktransport.com</p>
+            <a href="mailto:biruk.nigusse@biruktransport.com" class="btn btn-main">Send Message</a>
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6">
         <div class="team-member">
-          <img loading="lazy" src="images/team/team2.jpg" alt="doctor" class="img-fluid">
+          <img loading="lazy" src="images/blog/team-2.jpg" alt="doctor" class="img-fluid">
           <div class="contents text-center">
             <h4>Asnake abebe</h4>
-            <p>Founder & Chief Operation Manager<br>asenakeabebe@bruktransport.com</p>
-            <a href="mailto:asenakeabebe@bruktransport.com" class="btn btn-main">Send Message</a>
+            <p>Founder & Chief Operation Manager<br>asnakeabebe@biruktransport.com</p>
+            <a href="mailto:asnakeabebe@biruktransport.com" class="btn btn-main">Send Message</a>
           </div>
         </div>
       </div>
@@ -492,8 +524,8 @@ FACEBOOK: https://www.facebook.com/themefisher
           <img loading="lazy" src="images/team/team3.jpg" alt="doctor" class="img-fluid">
           <div class="contents text-center">
             <h4>Temesgen taye</h4>
-            <p>Founder, Administration and Marketing Manager<br>temesgentaye@bruktransport.com</p>
-            <a href="mailto:temesgentaye@bruktransport.com" class="btn btn-main">Send Message</a>
+            <p>Founder, Administration and Marketing Manager<br>temesgentaye@biruktransport.com</p>
+            <a href="mailto:temesgentaye@biruktransport.com" class="btn btn-main">Send Message</a>
           </div>
         </div>
       </div>
