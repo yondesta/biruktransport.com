@@ -24,49 +24,49 @@ FACEBOOK: https://www.facebook.com/themefisher
  
  
  <?php
+$form_message = ""; // Initialize message variable
+
 // Check if the form has been submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Define the email address where you want to receive messages
-    $to_email = "contact@biruktransport.com"; // <-- IMPORTANT: Change this to your actual email address
+    $to_email = "contact@biruktransport.com"; // <-- Ensure this is your actual email where you want to receive messages
 
-    // Get form data (and sanitize them)
+    // Get form data and sanitize them
     $name = filter_var(trim($_POST["name"]), FILTER_SANITIZE_STRING);
     $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
     $subject = filter_var(trim($_POST["subject"]), FILTER_SANITIZE_STRING);
     $message = filter_var(trim($_POST["message"]), FILTER_SANITIZE_STRING);
+    $phone = filter_var(trim($_POST["phone"]), FILTER_SANITIZE_STRING); // Get phone number
 
     // Basic validation
     if (empty($name) || !filter_var($email, FILTER_VALIDATE_EMAIL) || empty($subject) || empty($message)) {
-        echo "<p style='color:red; text-align:center;'>Please fill in all required fields and provide a valid email address.</p>";
-        exit; // Stop script execution
-    }
-
-    // Construct the email body
-    $email_body = "Name: " . $name . "\n";
-    $email_body .= "Email: " . $email . "\n";
-    $email_body .= "Subject: " . $subject . "\n\n";
-    $email_body .= "Message:\n" . $message;
-
-    // Set email headers
-    $headers = "From: Your Website Name <noreply@biruktransport.com>\r\n";;
-    $headers .= "Reply-To: " . $name . " <" . $email . ">\r\n";
-    $headers .= "Content-type: text/plain; charset=UTF-8\r\n";
-
-    // Attempt to send the email
-    
-}
-?>
-<?php
-$form_message = ""; // Initialize message variable
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // ... (your existing PHP code for processing form) ...
-
-    if (mail($to_email, $subject, $email_body, $headers)) {
-        $form_message = "<p style='color:green;'>Thank you! Your message has been sent successfully.</p>";
+        $form_message = "<div style='color:red; text-align:center; padding: 10px; margin-bottom: 15px; border: 1px solid red; background-color: #ffeaea;'>Please fill in all required fields and provide a valid email address.</div>";
     } else {
-        $form_message = "<p style='color:red;'>Sorry, there was an error sending your message. Please try again later.</p>";
+        // Construct the email body
+        $email_body = "Name: " . $name . "\n";
+        $email_body .= "Email: " . $email . "\n";
+        $email_body .= "Subject: " . $subject . "\n";
+        $email_body .= "Phone: " . (empty($phone) ? "Not provided" : $phone) . "\n\n"; // Include phone
+        $email_body .= "Message:\n" . $message;
+
+        // Set email headers - CRITICAL FOR DELIVERABILITY
+        // Ensure this 'From' address belongs to your website's domain
+        $headers = "From: Biruk Transport <noreply@biruktransport.com>\r\n"; // CORRECTED: No extra semicolon. Use a real email from your domain.
+        $headers .= "Reply-To: " . $name . " <" . $email . ">\r\n"; // Allows you to reply directly to the sender
+        $headers .= "Content-type: text/plain; charset=UTF-8\r\n";
+
+        // Attempt to send the email
+        if (mail($to_email, $subject, $email_body, $headers)) {
+            $form_message = "<div style='color:green; text-align:center; padding: 10px; margin-bottom: 15px; border: 1px solid green; background-color: #eafaea;'>Thank you! Your message has been sent successfully.</div>";
+            // Optional: Redirect to clear POST data and prevent resubmission on refresh
+            // header("Location: contact.php?mailsent=success");
+            // exit();
+        } else {
+            $form_message = "<div style='color:red; text-align:center; padding: 10px; margin-bottom: 15px; border: 1px solid red; background-color: #ffeaea;'>Sorry, there was an error sending your message. Please try again later.</div>";
+            // For debugging, you might log mail() errors if possible
+            // error_log("Mail sending failed to $to_email from $email", 0);
+        }
     }
 }
 ?>
@@ -176,7 +176,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <!-- phone -->
             <div class="col-lg-6">
-              <input type="text" class="form-control main" placeholder="Phone" required>
+              <input type="text" name="phone" class="form-control main" placeholder="Phone" required>
             </div>
             <!-- message -->
             <div class="col-lg-12">
@@ -199,10 +199,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <section class="map">
   <!-- Google Map -->
   <div id="map">
-   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63057.99271274911!2d38.764099!3d8.96067!3m2!1i1024!
-   2i768!4f13.1!3m3!1m2!1s0x164b838994d314bf%3A0x7593bd3e0cbd78e!2sDawi%20Building%2C%20A1%2C%20Addis%20Ababa%201000%2C%
-   20Ethiopia!5e0!3m2!1sen!2sus!4v1753219377021!5m2!1sen!2sus" width="100%" height="450" style="border:0;"
-           allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63057.99271274911!2d38.764099!3d8.96067!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b838994d314bf%3A0x7593bd3e0cbd78e!2sDawi%20Building%2C%20A1%2C%20Addis%20Ababa%201000%2C%20Ethiopia!5e0!3m2!1sen!2sus!4v1753219377021!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 </section>
 <!--====  End of Google Map  ====-->
