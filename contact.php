@@ -28,11 +28,11 @@ FACEBOOK: https://www.facebook.com/themefisher
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Define the email address where you want to receive messages
-    $to_email = "yonasdesta37@gmail.com"; // <-- IMPORTANT: Change this to your actual email address
+    $to_email = "contact@biruktransport.com"; // <-- IMPORTANT: Change this to your actual email address
 
     // Get form data (and sanitize them)
     $name = filter_var(trim($_POST["name"]), FILTER_SANITIZE_STRING);
-    $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+    $email = filter_var(trim("noreply@biruktransport.com"), FILTER_SANITIZE_EMAIL);
     $subject = filter_var(trim($_POST["subject"]), FILTER_SANITIZE_STRING);
     $message = filter_var(trim($_POST["message"]), FILTER_SANITIZE_STRING);
 
@@ -49,8 +49,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_body .= "Message:\n" . $message;
 
     // Set email headers
-    $headers = "From: Biruk Transport <noreply@biruktransport.com>\r\n";
-    $headers .= "Reply-To: " . $name . " <" . $email . ">\r\n";
+    $headers = "From: " . $name . " <" . $email . ">\r\n";
+    $headers .= "Reply-To: " . $email . "\r\n";
     $headers .= "Content-type: text/plain; charset=UTF-8\r\n";
 
     // Attempt to send the email
@@ -168,7 +168,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <!-- email -->
             <div class="col-lg-6">
-              <input type="email" name=email class="form-control main" placeholder="Email" required>
+              <input type="email" name="email" class="form-control main" placeholder="Email" required>
             </div>
             <!-- Subject -->
             <div class="col-lg-6">
