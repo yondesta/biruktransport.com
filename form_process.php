@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = test_input($_POST["message"]);
   }
   
-  if ($name_error == '' and $email_error == '' and $phone_error == '' and $url_error == '' ){
+  if ($name_error == '' and $email_error == ''){
       $message_body = '';
       unset($_POST['submit']);
       foreach ($_POST as $key => $value){
@@ -41,10 +41,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       
       $to = 'contact@biruktransport.com';
       $subject = $_POST['subject'];
-	  $from = $_POST['mail'];
+	  $from = $_POST['email'];
 	  $phone = $_POST['phone'];
-	  $company = $_POST['company'];
-	  $body = "From: " . $name . "\r\n" . "Email: " . $email . "\r\n" . "Phone: " . $phone . "\r\n" . "Company: " . $company . "\r\n" . $message;
+	  //$company = $_POST['company'];
+	  $body = "From: " . $name . "\r\n" . "Email: " . $email . "\r\n" . "Phone: " . $phone . "\r\n" . "\r\n" . $message;
       if (mail($to, $subject, $body)){
           $success = "Message sent, thank you for contacting us!";
           $name = $email = $message = $subject = $phone = $company = '';

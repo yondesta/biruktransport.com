@@ -133,15 +133,15 @@ FACEBOOK: https://www.facebook.com/themefisher
                 </div>
               </div>
               <div class="card">
-                <div class="card-header" role="tab" id="headingThree">
+                <div class="card-header" role="tab" id="headingFour">
                   <h4 class="card-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapseThree"
-                      aria-expanded="false" aria-controls="collapseThree">
+                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapseFour"
+                      aria-expanded="false" aria-controls="collapseFour">
                       Low beds
                     </a>
                   </h4>
                 </div>
-                <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordionGroup">
+                <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordionGroup">
                   <div class="card-body">
                     For the project cargos, large equipment’s, oversized cargo which need expendable low beds up to 24 M & more, heavy machinery.
                     These are typically reserved for industrial and construction equipment.

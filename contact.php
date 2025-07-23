@@ -21,55 +21,9 @@ FACEBOOK: https://www.facebook.com/themefisher
 
 <!DOCTYPE html>
  
+ <?php include('form_process.php')?>
  
- 
- <?php
-$form_message = ""; // Initialize message variable
 
-// Check if the form has been submitted
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-    // Define the email address where you want to receive messages
-    $to_email = "contact@biruktransport.com"; // <-- Ensure this is your actual email where you want to receive messages
-
-    // Get form data and sanitize them
-    $name = filter_var(trim($_POST["name"]), FILTER_SANITIZE_STRING);
-    $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-    $subject = filter_var(trim($_POST["subject"]), FILTER_SANITIZE_STRING);
-    $message = filter_var(trim($_POST["message"]), FILTER_SANITIZE_STRING);
-    $phone = filter_var(trim($_POST["phone"]), FILTER_SANITIZE_STRING); // Get phone number
-
-    // Basic validation
-    if (empty($name) || !filter_var($email, FILTER_VALIDATE_EMAIL) || empty($subject) || empty($message)) {
-        $form_message = "<div style='color:red; text-align:center; padding: 10px; margin-bottom: 15px; border: 1px solid red; background-color: #ffeaea;'>Please fill in all required fields and provide a valid email address.</div>";
-    } else {
-        // Construct the email body
-        $email_body = "Name: " . $name . "\n";
-        $email_body .= "Email: " . $email . "\n";
-        $email_body .= "Subject: " . $subject . "\n";
-        $email_body .= "Phone: " . (empty($phone) ? "Not provided" : $phone) . "\n\n"; // Include phone
-        $email_body .= "Message:\n" . $message;
-
-        // Set email headers - CRITICAL FOR DELIVERABILITY
-        // Ensure this 'From' address belongs to your website's domain
-        $headers = "From: Biruk Transport <noreply@biruktransport.com>\r\n"; // CORRECTED: No extra semicolon. Use a real email from your domain.
-        $headers .= "Reply-To: " . $name . " <" . $email . ">\r\n"; // Allows you to reply directly to the sender
-        $headers .= "Content-type: text/plain; charset=UTF-8\r\n";
-
-        // Attempt to send the email
-        if (mail($to_email, $subject, $email_body, $headers)) {
-            $form_message = "<div style='color:green; text-align:center; padding: 10px; margin-bottom: 15px; border: 1px solid green; background-color: #eafaea;'>Thank you! Your message has been sent successfully.</div>";
-            // Optional: Redirect to clear POST data and prevent resubmission on refresh
-            // header("Location: contact.php?mailsent=success");
-            // exit();
-        } else {
-            $form_message = "<div style='color:red; text-align:center; padding: 10px; margin-bottom: 15px; border: 1px solid red; background-color: #ffeaea;'>Sorry, there was an error sending your message. Please try again later.</div>";
-            // For debugging, you might log mail() errors if possible
-            // error_log("Mail sending failed to $to_email from $email", 0);
-        }
-    }
-}
-?>
 <html lang="zxx">
 <head>
 
@@ -158,10 +112,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <div class="col-lg-8 col-md-7">
         <div class="contact-form">
           <!-- contact form start -->
-          <div id="cf-msg" class="form-message text-center">
-              <?php echo $form_message; ?>
-            </div>
-          <form action="contact.php" class="row" id="contact-form" method="POST">
+          
+          <form id="contact-form" action="<?= htmlspecialchars($_SERVER["PHP_SELF"]) ?>" class="row"  method="POST">
             <!-- name -->
             <div class="col-lg-6">
               <input type="text" name="name" class="form-control main" placeholder="Name" required>
