@@ -20,22 +20,10 @@ FACEBOOK: https://www.facebook.com/themefisher
 -->
 
 <!DOCTYPE html>
+ 
+ 
+ 
  <?php
-$form_message = ""; // Initialize message variable
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // ... (your existing PHP code for processing form) ...
-
-    if (mail($to_email, $subject, $email_body, $headers)) {
-        $form_message = "<p style='color:green;'>Thank you! Your message has been sent successfully.</p>";
-    } else {
-        $form_message = "<p style='color:red;'>Sorry, there was an error sending your message. Please try again later.</p>";
-    }
-}
-?>
- <?php
-$form_message = ""; // Initialize message variable
-
 // Check if the form has been submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -50,30 +38,45 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Basic validation
     if (empty($name) || !filter_var($email, FILTER_VALIDATE_EMAIL) || empty($subject) || empty($message)) {
-        // Set an error message if validation fails
-        $form_message = "<div style='color:red; text-align:center; padding: 10px; margin-bottom: 15px; border: 1px solid red; background-color: #ffeaea;'>Please fill in all required fields and provide a valid email address.</div>";
-        // Optionally, you could exit here if you don't want the form to appear below the message
-        // exit;
+        echo "<p style='color:red; text-align:center;'>Please fill in all required fields and provide a valid email address.</p>";
+        exit; // Stop script execution
+    }
+
+    // Construct the email body
+    $email_body = "Name: " . $name . "\n";
+    $email_body .= "Email: " . $email . "\n";
+    $email_body .= "Subject: " . $subject . "\n\n";
+    $email_body .= "Message:\n" . $message;
+
+    // Set email headers
+    $headers = "From: " . $name . " <" . $email . ">\r\n";
+    $headers .= "Reply-To: " . $email . "\r\n";
+    $headers .= "Content-type: text/plain; charset=UTF-8\r\n";
+
+    // Attempt to send the email
+    if (mail($to_email, $subject, $email_body, $headers)) {
+        // Success message for the user
+        echo "<p style='color:green; text-align:center;'>Thank you! Your message has been sent successfully.</p>";
+
+        // Clear form fields after successful submission (optional, might require JS)
+        // For PHP, you'd typically redirect or ensure the form is not resubmitted on refresh.
+        // For this example, it just prints the message.
     } else {
-        // Construct the email body
-        $email_body = "Name: " . $name . "\n";
-        $email_body .= "Email: " . $email . "\n";
-        $email_body .= "Subject: " . $subject . "\n\n";
-        $email_body .= "Message:\n" . $message;
+        // Failure message
+        echo "<p style='color:red; text-align:center;'>Sorry, there was an error sending your message. Please try again later.</p>";
+    }
+}
+?>
+<?php
+$form_message = ""; // Initialize message variable
 
-        // Set email headers
-        $headers = "From: " . $name . " <" . $email . ">\r\n";
-        $headers .= "Reply-To: " . $email . "\r\n";
-        $headers .= "Content-type: text/plain; charset=UTF-8\r\n";
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // ... (your existing PHP code for processing form) ...
 
-        // Attempt to send the email
-        if (mail($to_email, $subject, $email_body, $headers)) {
-            // Success message for the user
-            $form_message = "<div style='color:green; text-align:center; padding: 10px; margin-bottom: 15px; border: 1px solid green; background-color: #eafaea;'>Thank you! Your message has been sent successfully.</div>";
-        } else {
-            // Failure message
-            $form_message = "<div style='color:red; text-align:center; padding: 10px; margin-bottom: 15px; border: 1px solid red; background-color: #ffeaea;'>Sorry, there was an error sending your message. Please try again later.</div>";
-        }
+    if (mail($to_email, $subject, $email_body, $headers)) {
+        $form_message = "<p style='color:green;'>Thank you! Your message has been sent successfully.</p>";
+    } else {
+        $form_message = "<p style='color:red;'>Sorry, there was an error sending your message. Please try again later.</p>";
     }
 }
 ?>
@@ -165,7 +168,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <div class="col-lg-8 col-md-7">
         <div class="contact-form">
           <!-- contact form start -->
-          <?php echo $form_message; ?>
+          <div id="cf-msg" class="form-message text-center">
+              <?php echo $form_message; ?>
+            </div>
           <form action="contact.php" class="row" id="contact-form" method="POST">
             <!-- name -->
             <div class="col-lg-6">
