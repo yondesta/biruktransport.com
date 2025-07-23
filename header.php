@@ -158,22 +158,7 @@
         <li class="nav-item @@appointment">
           <a class="nav-link" href="appointment.php">Appointment</a>
         </li>
-        <li class="nav-item dropdown @@blogs">
-          <a class="nav-link dropdown-toggle" href="#!" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blogs</a>
-
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item @@blog" href="blog.php">Blog</a></li>
-            <li><a class="dropdown-item @@blogDetails" href="blog-details.php">Blog Details</a></li>
-            <li class="dropdown dropdown-submenu dropright">
-              <a class="dropdown-item dropdown-toggle" href="#!" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu</a>
-    
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="index.php">Submenu 01</a></li>
-                <li><a class="dropdown-item" href="index.php">Submenu 02</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
+        
         <li class="nav-item @@contact">
           <a class="nav-link" href="contact.php">Contact</a>
         </li>

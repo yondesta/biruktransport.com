@@ -28,7 +28,7 @@ FACEBOOK: https://www.facebook.com/themefisher
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Define the email address where you want to receive messages
-    $to_email = "contact@biruktransport.com"; // <-- IMPORTANT: Change this to your actual email address
+    $to_email = "yonasdesta37@gmail.com"; // <-- IMPORTANT: Change this to your actual email address
 
     // Get form data (and sanitize them)
     $name = filter_var(trim($_POST["name"]), FILTER_SANITIZE_STRING);
@@ -54,17 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers .= "Content-type: text/plain; charset=UTF-8\r\n";
 
     // Attempt to send the email
-    if (mail($to_email, $subject, $email_body, $headers)) {
-        // Success message for the user
-        echo "<p style='color:green; text-align:center;'>Thank you! Your message has been sent successfully.</p>";
-
-        // Clear form fields after successful submission (optional, might require JS)
-        // For PHP, you'd typically redirect or ensure the form is not resubmitted on refresh.
-        // For this example, it just prints the message.
-    } else {
-        // Failure message
-        echo "<p style='color:red; text-align:center;'>Sorry, there was an error sending your message. Please try again later.</p>";
-    }
+    
 }
 ?>
 <?php
