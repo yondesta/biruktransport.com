@@ -54,22 +54,22 @@
         <div class="top-right text-center text-md-right">
           <ul class="social-links">
             <li>
-              <a href="https://themefisher.com/" aria-label="facebook">
+              <a href="https://web.facebook.com/people/biruk-transport/61569450926207/" aria-label="facebook">
                 <i class="fab fa-facebook-f"></i>
               </a>
             </li>
             <li>
-              <a href="https://themefisher.com/" aria-label="twitter">
+              <a href="https://www.instagram.com/biruktransportethiopia/?igsh=YnhmMzM0MHhuaGZz#" aria-label="twitter">
                 <i class="fab fa-twitter"></i>
               </a>
             </li>
             <li>
-              <a href="https://themefisher.com/" aria-label="google-plus">
+              <a href="https://www.instagram.com/biruktransportethiopia/?igsh=YnhmMzM0MHhuaGZz#" aria-label="google-plus">
                 <i class="fab fa-google-plus-g"></i>
               </a>
             </li>
             <li>
-              <a href="https://themefisher.com/" aria-label="instagram">
+              <a href="https://www.instagram.com/biruktransportethiopia/?igsh=YnhmMzM0MHhuaGZz#" aria-label="instagram">
                 <i class="fab fa-instagram"></i>
               </a>
             </li>
