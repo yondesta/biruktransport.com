@@ -49,7 +49,7 @@ FACEBOOK: https://www.facebook.com/themefisher
 <!--End Main Header -->
 
 <!--Page Title-->
-<section class="page-title text-center" style="background-image:url(images/background/3.jpg);">
+<section class="page-title text-center" style="background-image:url(images/background/gallery.jpg);">
     <div class="container">
         <div class="title-text">
             <h1>gallery</h1>
@@ -70,52 +70,51 @@ FACEBOOK: https://www.facebook.com/themefisher
       <div class="col-lg-12">
         <div class="section-title text-center">
           <h3>Collected Media
-            <span>of Our Hospital</span>
+            <span>of Our Transport Service</span>
           </h3>
-          <p>Leverage agile frameworks to provide a robust synopsis for high level overv-
-            <br>iews. Iterative approaches to corporate strategy...</p>
+          
         </div>
       </div>
       <div class="col-lg-6 col-md-6">
         <div class="video-gallery-item">
           <div class="image-holder">
-            <img loading="lazy" src="images/gallery/video-thumb-01.jpg" class="img-fluid" alt="video-gallery">
-            <a data-fancybox href="https://www.youtube.com/watch?v=h-h5Mhlt6O0"><i class="fa fa-play"></i></a>
+            <img loading="lazy" src="videos/one.jpg" class="img-fluid" alt="video-gallery">
+            <a data-fancybox href="videos/roro.mp4"><i class="fa fa-play"></i></a>
           </div>
-          <h3>January 2018 Florida Conference</h3>
+          <h3>Biruk Transport Service</h3>
         </div>
       </div>
       <div class="col-lg-6 col-md-6">
         <div class="video-gallery-item">
           <div class="image-holder">
-            <img loading="lazy" src="images/gallery/video-thumb-02.jpg" class="img-fluid" alt="video-gallery">
-            <a data-fancybox href="https://www.youtube.com/watch?v=h-h5Mhlt6O0">
+            <img loading="lazy" src="videos/three.jpg" class="img-fluid" alt="video-gallery">
+            <a data-fancybox href="videos/video.mp4">
               <i class="fa fa-play"></i>
             </a>
           </div>
-          <h3>December 2017 los angeles Conference</h3>
+          <h3>Biruk Transport Service</h3>
         </div>
       </div>
       <div class="col-lg-6 col-md-6">
         <div class="video-gallery-item">
           <div class="image-holder">
-            <img loading="lazy" src="images/gallery/video-thumb-03.jpg" class="img-fluid" alt="video-gallery">
-            <a data-fancybox href="https://www.youtube.com/watch?v=h-h5Mhlt6O0">
+            <img loading="lazy" src="videos/two.jpg" class="img-fluid" alt="video-gallery">
+            <a data-fancybox href="videos/video1.mp4">
               <i class="fa fa-play"></i>
             </a>
           </div>
-          <h3>November 2017 Texas Conference</h3>
+          <h3>Biruk Transport Service</h3>
         </div>
       </div>
       <div class="col-lg-6 col-md-6">
         <div class="video-gallery-item">
           <div class="image-holder">
-            <img loading="lazy" src="images/gallery/video-thumb-04.jpg" class="img-fluid" alt="video-gallery">
-            <a data-fancybox href="https://www.youtube.com/watch?v=h-h5Mhlt6O0">
+            <img loading="lazy" src="videos/four.jpg" class="img-fluid" alt="video-gallery">
+            <a data-fancybox href="videos/roro2.mp4">
               <i class="fa fa-play"></i>
             </a>
           </div>
-          <h3>October 2017 san francisco Conference</h3>
+          <h3>Biruk Transport Service</h3>
         </div>
       </div>
     </div>
@@ -128,58 +127,81 @@ FACEBOOK: https://www.facebook.com/themefisher
       <div class="col-lg-12">
         <div class="section-title text-center">
           <h3>Collected Shots
-            <span>of Our Hospital</span>
+            <span>of Our Transport Services</span>
           </h3>
-          <p>Leverage agile frameworks to provide a robust synopsis for high level overv-
-            <br>iews. Iterative approaches to corporate strategy...</p>
+          
         </div>
       </div>
       <div class="col-lg-4 col-md-6">
         <div class="gallery-item">
-          <img loading="lazy" src="images/gallery/gallery-01.jpg" class="img-fluid" alt="gallery-image">
-          <a data-fancybox="images" href="images/gallery/gallery-01.jpg"></a>
-          <h3>Facility 01</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, in.</p>
+          <img loading="lazy" src="images/gallery/1.jpg" class="img-fluid" alt="gallery-image">
+          <a data-fancybox="images" href="images/gallery/1.jpg"></a>
+          <h3>Gallery 1</h3>
+          <p>Biruk Transport.</p>
         </div>
       </div>
       <div class="col-lg-4 col-md-6">
         <div class="gallery-item">
-          <img loading="lazy" src="images/gallery/gallery-02.jpg" class="img-fluid" alt="gallery-image">
-          <a data-fancybox="images" href="images/gallery/gallery-02.jpg"></a>
-          <h3>Facility 02</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, in.</p>
+          <img loading="lazy" src="images/gallery/2.jpg" class="img-fluid" alt="gallery-image">
+          <a data-fancybox="images" href="images/gallery/2.jpg"></a>
+          <h3>Gallery 2</h3>
+          <p>Biruk Transport.</p>
         </div>
       </div>
       <div class="col-lg-4 col-md-6">
         <div class="gallery-item">
-          <img loading="lazy" src="images/gallery/gallery-03.jpg" class="img-fluid" alt="gallery-image">
-          <a data-fancybox="images" href="images/gallery/gallery-03.jpg"></a>
-          <h3>Facility 03</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, in.</p>
+          <img loading="lazy" src="images/gallery/3.jpg" class="img-fluid" alt="gallery-image">
+          <a data-fancybox="images" href="images/gallery/3.jpg"></a>
+          <h3>Gallery 3</h3>
+          <p>Biruk Transport.</p>
         </div>
       </div>
       <div class="col-lg-4 col-md-6">
         <div class="gallery-item">
-          <img loading="lazy" src="images/gallery/gallery-04.jpg" class="img-fluid" alt="gallery-image">
-          <a data-fancybox="images" href="images/gallery/gallery-04.jpg"></a>
-          <h3>Facility 04</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, in.</p>
+          <img loading="lazy" src="images/gallery/4.jpg" class="img-fluid" alt="gallery-image">
+          <a data-fancybox="images" href="images/gallery/4.jpg"></a>
+          <h3>Gallery 4</h3>
+          <p>Biruk Transport.</p>
         </div>
       </div>
       <div class="col-lg-4 col-md-6">
         <div class="gallery-item">
-          <img loading="lazy" src="images/gallery/gallery-05.jpg" class="img-fluid" alt="gallery-image">
-          <a data-fancybox="images" href="images/gallery/gallery-05.jpg"></a>
-          <h3>Facility 05</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, in.</p>
+          <img loading="lazy" src="images/gallery/5.jpg" class="img-fluid" alt="gallery-image">
+          <a data-fancybox="images" href="images/gallery/5.jpg"></a>
+          <h3>Gallery 5</h3>
+          <p>Biruk Transport.</p>
         </div>
       </div>
       <div class="col-lg-4 col-md-6">
         <div class="gallery-item">
-          <img loading="lazy" src="images/gallery/gallery-06.jpg" class="img-fluid" alt="gallery-image">
-          <a data-fancybox="images" href="images/gallery/gallery-06.jpg"></a>
-          <h3>Facility 06</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, in.</p>
+          <img loading="lazy" src="images/gallery/6.jpg" class="img-fluid" alt="gallery-image">
+          <a data-fancybox="images" href="images/gallery/6.jpg"></a>
+          <h3>Gallery 6</h3>
+          <p>Biruk Transport.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="gallery-item">
+          <img loading="lazy" src="images/gallery/7.jpg" class="img-fluid" alt="gallery-image">
+          <a data-fancybox="images" href="images/gallery/7.jpg"></a>
+          <h3>Gallery 7</h3>
+          <p>Biruk Transport.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="gallery-item">
+          <img loading="lazy" src="images/gallery/8.jpg" class="img-fluid" alt="gallery-image">
+          <a data-fancybox="images" href="images/gallery/8.jpg"></a>
+          <h3>Gallery 8</h3>
+          <p>Biruk Transport.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="gallery-item">
+          <img loading="lazy" src="images/gallery/9.jpg" class="img-fluid" alt="gallery-image">
+          <a data-fancybox="images" href="images/gallery/9.jpg"></a>
+          <h3>Gallery 9</h3>
+          <p>Biruk Transport.</p>
         </div>
       </div>
     </div>

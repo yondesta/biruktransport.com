@@ -54,27 +54,27 @@
         <div class="top-right text-center text-md-right">
           <ul class="social-links">
             <li>
-              <a href="https://web.facebook.com/people/biruk-transport/61569450926207/" aria-label="facebook">
+              <a href="https://web.facebook.com/people/biruk-transport/61569450926207/" target="_blank" aria-label="facebook">
                 <i class="fab fa-facebook-f"></i>
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/biruktransportethiopia/?igsh=YnhmMzM0MHhuaGZz#" aria-label="twitter">
+              <a href="https://www.instagram.com/biruktransportethiopia/?igsh=YnhmMzM0MHhuaGZz#" target="_blank" aria-label="twitter">
                 <i class="fab fa-twitter"></i>
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/biruktransportethiopia/?igsh=YnhmMzM0MHhuaGZz#" aria-label="google-plus">
+              <a href="https://www.instagram.com/biruktransportethiopia/?igsh=YnhmMzM0MHhuaGZz#" target="_blank" aria-label="google-plus">
                 <i class="fab fa-google-plus-g"></i>
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/biruktransportethiopia/?igsh=YnhmMzM0MHhuaGZz#" aria-label="instagram">
+              <a href="https://www.instagram.com/biruktransportethiopia/?igsh=YnhmMzM0MHhuaGZz#" target="_blank" aria-label="instagram">
                 <i class="fab fa-instagram"></i>
               </a>
             </li>
             <li>
-              <a href="https://themefisher.com/" aria-label="pinterest">
+              <a href="https://web.facebook.com/people/biruk-transport/61569450926207/" target="_blank" aria-label="pinterest">
                 <i class="fab fa-pinterest-p"></i>
               </a>
             </li>
@@ -118,7 +118,7 @@
             </li>
           </ul>
           <div class="link-btn text-center text-lg-right">
-            <a href="contact.php" class="btn-style-one">Appoinment</a>
+            <a href="appointment.php" class="btn-style-one">Appoinment</a>
           </div>
         </div>
       </div>
@@ -154,11 +154,15 @@
         <li class="nav-item @@service">
           <a class="nav-link" href="service.php">Service</a>
         </li>
-        
+        <li class="nav-item @@gallery">
+          <a class="nav-link" href="gallery.php">Gallery</a>
+        </li>
         <li class="nav-item @@appointment">
           <a class="nav-link" href="appointment.php">Appointment</a>
         </li>
-        
+         <li class="nav-item @@appointment">
+          <a class="nav-link" href="company_profile.php">Company Profile</a>
+        </li>
         <li class="nav-item @@contact">
           <a class="nav-link" href="contact.php">Contact</a>
         </li>

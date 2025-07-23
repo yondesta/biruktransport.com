@@ -117,7 +117,7 @@
                     </a>
                   </div>
                   <div class="media-body">
-                    <h5><a href="blog-details.php">A lesson adip isicing</a></h5>
+                    <h5><a href="about.php">A lesson adip isicing</a></h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, dolorem.</p>
                   </div>
                 </div>
@@ -125,12 +125,12 @@
               <li class="item">
                 <div class="media">
                   <div class="media-left mr-3">
-                    <a href="blog-details.php">
+                    <a href="about.php">
                       <img loading="lazy" src="images/blog/post-thumb-smalljpg" alt="post-thumb">
                     </a>
                   </div>
                   <div class="media-body">
-                    <h5><a href="blog-details.php">How to make an event</a></h5>
+                    <h5><a href="about.php">How to make an event</a></h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, dolorem.</p>
                   </div>
                 </div>
