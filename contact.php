@@ -49,8 +49,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_body .= "Message:\n" . $message;
 
     // Set email headers
-    $headers = "From: " . $name . " <" . $email . ">\r\n";
-    $headers .= "Reply-To: " . $email . "\r\n";
+    $headers = "From: " . "noreply@biruktransport.com \r\n" .  <" . $email . ">\r\n";
+    $headers .= "Reply-To: " . $name . " <" . $email . ">\r\n";;
     $headers .= "Content-type: text/plain; charset=UTF-8\r\n";
 
     // Attempt to send the email
