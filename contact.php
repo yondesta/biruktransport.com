@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Get form data (and sanitize them)
     $name = filter_var(trim($_POST["name"]), FILTER_SANITIZE_STRING);
-    $email = filter_var(trim("noreply@biruktransport.com"), FILTER_SANITIZE_EMAIL);
+    $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
     $subject = filter_var(trim($_POST["subject"]), FILTER_SANITIZE_STRING);
     $message = filter_var(trim($_POST["message"]), FILTER_SANITIZE_STRING);
 
@@ -49,8 +49,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_body .= "Message:\n" . $message;
 
     // Set email headers
-    $headers = "From: " . $name . " <" . $email . ">\r\n";
-    $headers .= "Reply-To: " . $email . "\r\n";
+    $headers = "From: Your Website Name <noreply@biruktransport.com>\r\n";;
+    $headers .= "Reply-To: " . $name . " <" . $email . ">\r\n";
     $headers .= "Content-type: text/plain; charset=UTF-8\r\n";
 
     // Attempt to send the email
