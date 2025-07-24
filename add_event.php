@@ -1,7 +1,7 @@
 <?php
 // Database connection details - IMPORTANT: Replace with your actual credentials
 define('DB_SERVER', 'localhost'); // Usually 'localhost'
-define('DB_USERNAME', 'biruktzw_yonas'); // Your database username
+define('DB_USERNAME', 'yonas'); // Your database username
 define('DB_PASSWORD', 'Biruk@123'); // Your database password
 define('DB_NAME', 'biruktzw_biruktransport'); // The database name you created
 
@@ -14,6 +14,23 @@ if ($conn === false) {
 }
 
 $message = ''; // To store success or error messages
+$categories = []; // Array to store categories for the dropdown
+
+// --- Fetch Categories for the Dropdown ---
+$sql_categories = "SELECT category_name FROM event_categories ORDER BY category_name ASC";
+if ($result_categories = $conn->query($sql_categories)) {
+    if ($result_categories->num_rows > 0) {
+        while ($row_cat = $result_categories->fetch_assoc()) {
+            $categories[] = $row_cat['category_name'];
+        }
+        $result_categories->free();
+    }
+} else {
+    // Handle error if categories cannot be fetched
+    $message = '<div style="color: red;">Error fetching categories: ' . $conn->error . '</div>';
+}
+// --- End Fetch Categories ---
+
 
 // Process form submission when form is posted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -21,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $eventName = $conn->real_escape_string(trim($_POST['event_name']));
     $eventDetail = $conn->real_escape_string(trim($_POST['event_detail']));
     $eventDate = $conn->real_escape_string(trim($_POST['event_date']));
-    $category = $conn->real_escape_string(trim($_POST['category']));
+    $category = $conn->real_escape_string(trim($_POST['category'])); // Category now comes from dropdown
 
     // Simple validation
     if (empty($eventName) || empty($eventDetail) || empty($eventDate) || empty($category)) {
@@ -38,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if ($stmt->execute()) {
                 $message = '<div style="color: green;">Event added successfully!</div>';
                 // Clear form fields after successful submission (optional)
-                $_POST = array(); // Clear POST array to reset form
+                // Note: Values in inputs are now reset via PHP ternary operators below
             } else {
                 $message = '<div style="color: red;">Error: Could not execute query. ' . $stmt->error . '</div>';
             }
@@ -50,9 +67,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
-// Close connection
+// Close connection before HTML output
 $conn->close();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,7 +84,8 @@ $conn->close();
         label { display: block; margin-bottom: 5px; font-weight: bold; }
         input[type="text"],
         input[type="date"],
-        textarea {
+        textarea,
+        select { /* Added select here */
             width: calc(100% - 22px);
             padding: 10px;
             margin-bottom: 15px;
@@ -104,7 +123,15 @@ $conn->close();
             <input type="date" id="event_date" name="event_date" value="<?php echo isset($_POST['event_date']) ? htmlspecialchars($_POST['event_date']) : ''; ?>" required>
 
             <label for="category">Category:</label>
-            <input type="text" id="category" name="category" value="<?php echo isset($_POST['category']) ? htmlspecialchars($_POST['category']) : ''; ?>" required>
+            <select id="category" name="category" required>
+                <option value="">-- Select a Category --</option>
+                <?php foreach ($categories as $cat): ?>
+                    <option value="<?php echo htmlspecialchars($cat); ?>"
+                        <?php echo (isset($_POST['category']) && $_POST['category'] == $cat) ? 'selected' : ''; ?>>
+                        <?php echo htmlspecialchars($cat); ?>
+                    </option>
+                <?php endforeach; ?>
+            </select>
 
             <button type="submit">Add Event</button>
         </form>
