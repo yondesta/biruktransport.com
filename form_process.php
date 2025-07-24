@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           $message_body .=  "$key: $value\n";
       }
       
-      $to = 'contact@biruktransport.com';
+      $to = 'yonasdesta37@gmail.com';
       $subject = $_POST['subject'];
 	  $from = $_POST['email'];
 	  $phone = $_POST['phone'];
