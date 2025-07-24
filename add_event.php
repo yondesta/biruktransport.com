@@ -1,7 +1,7 @@
 <?php
 // Database connection details - IMPORTANT: Replace with your actual credentials
 define('DB_SERVER', 'localhost'); // Usually 'localhost'
-define('DB_USERNAME', 'yonas'); // Your database username
+define('DB_USERNAME', 'biruktzw_yonas'); // Your database username
 define('DB_PASSWORD', 'Biruk@123'); // Your database password
 define('DB_NAME', 'biruktzw_biruktransport'); // The database name you created
 
