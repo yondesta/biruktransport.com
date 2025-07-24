@@ -116,15 +116,15 @@ FACEBOOK: https://www.facebook.com/themefisher
           <form id="contact-form" action="<?= htmlspecialchars($_SERVER["PHP_SELF"]) ?>" class="row"  method="POST">
             <!-- name -->
             <div class="col-lg-6">
-              <input type="text" name="name" class="form-control main" placeholder="Name" required>
+              <input type="text" name="name" value="<?= $name ?>" class="form-control main" placeholder="Name" required>
             </div>
             <!-- email -->
             <div class="col-lg-6">
-              <input type="email" name="email" class="form-control main" placeholder="Email" required>
+              <input type="email" name="email" value="<?= $email ?>" class="form-control main" placeholder="Email" required>
             </div>
             <!-- Subject -->
             <div class="col-lg-6">
-              <input type="text" name="subject" class="form-control main" placeholder="Subject" required>
+              <input type="text" name="subject" value="<?= $subject ?>" class="form-control main" placeholder="Subject" required>
             </div>
             <!-- phone -->
             <div class="col-lg-6">
@@ -132,13 +132,14 @@ FACEBOOK: https://www.facebook.com/themefisher
             </div>
             <!-- message -->
             <div class="col-lg-12">
-              <textarea name="message" rows="10" class="form-control main" placeholder="Your message"></textarea>
+              <textarea name="message" value="<?= $message ?>" rows="10" class="form-control main" placeholder="Your message"></textarea>
             </div>
             <!-- submit button -->
             <div class="col-md-12 text-right">
               <button class="btn btn-style-one" type="submit">Send Message</button>
             </div>
           </form>
+          <div class="success"><?= $success ?></div>
           <!-- contact form end -->
         </div>
       </div>

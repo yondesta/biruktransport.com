@@ -142,7 +142,7 @@ FACEBOOK: https://www.facebook.com/themefisher
           <img loading="lazy" src="images/team/team-1.jpg" alt="doctor" class="img-fluid">
           <div class="contents text-center">
             <h4>Biruk  neguse</h4>
-            <p>Founder and CEO<br>biruk.nigusse@bruktransport.com</p>
+            <p>General Manager<br>biruk.nigusse@biruktransport.com</p>
             <a href="mailto:biruk.nigusse@biruktransport.com" class="btn btn-main">Make Appointment</a>
           </div>
         </div>
@@ -152,7 +152,7 @@ FACEBOOK: https://www.facebook.com/themefisher
           <img loading="lazy" src="images/team/team-2.jpg" alt="doctor" class="img-fluid">
           <div class="contents text-center">
             <h4>Asnake abebe</h4>
-            <p>Founder & Chief Operation Manager<br>asenakeabebe@bruktransport.com</p>
+            <p>Chief Operation Manager<br>asnakeabebe@biruktransport.com</p>
             <a href="mailto:asnakeabebe@biruktransport.com" class="btn btn-main">Book Appointment</a>
           </div>
         </div>
@@ -162,7 +162,7 @@ FACEBOOK: https://www.facebook.com/themefisher
           <img loading="lazy" src="images/team/team-3.jpg" alt="doctor" class="img-fluid">
           <div class="contents text-center">
             <h4>Temesgen taye</h4>
-            <p>Founder, Administration and Marketing Manager<br>temesgentaye@bruktransport.com</p>
+            <p>Administration and Marketing Manager<br>temesgentaye@biruktransport.com</p>
             <a href="mailto:temesgentaye@biruktransport.com" class="btn btn-main">Book Appointment</a>
           </div>
         </div>
