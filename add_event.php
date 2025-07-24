@@ -3,7 +3,7 @@
 define('DB_SERVER', 'localhost'); // Usually 'localhost'
 define('DB_USERNAME', 'yonas'); // Your database username
 define('DB_PASSWORD', 'Biruk@123'); // Your database password
-define('DB_NAME', 'biruktzw_biruktransport'); // The database name you created
+define('DB_NAME', 'biruktransport'); // The database name you created
 
 // Attempt to connect to MySQL database
 $conn = new mysqli(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
