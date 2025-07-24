@@ -26,7 +26,6 @@ if ($result_categories = $conn->query($sql_categories)) {
         $result_categories->free();
     }
 } else {
-    // Handle error if categories cannot be fetched
     $message = '<div style="color: red;">Error fetching categories: ' . $conn->error . '</div>';
 }
 // --- End Fetch Categories ---
@@ -38,24 +37,65 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $eventName = $conn->real_escape_string(trim($_POST['event_name']));
     $eventDetail = $conn->real_escape_string(trim($_POST['event_detail']));
     $eventDate = $conn->real_escape_string(trim($_POST['event_date']));
-    $category = $conn->real_escape_string(trim($_POST['category'])); // Category now comes from dropdown
+    $category = $conn->real_escape_string(trim($_POST['category']));
 
-    // Simple validation
+    $imageFilename = NULL; // Initialize image filename as NULL
+
+    // --- Image Upload Handling ---
+    if (isset($_FILES['event_image']) && $_FILES['event_image']['error'] == UPLOAD_ERR_OK) {
+        $target_dir = "images/uploads/"; // Directory where images will be saved
+        $file_extension = pathinfo($_FILES["event_image"]["name"], PATHINFO_EXTENSION);
+        $unique_filename = uniqid() . "." . $file_extension; // Generate a unique name for the file
+        $target_file = $target_dir . $unique_filename;
+        $imageFileType = strtolower($file_extension);
+
+        // Check if image file is a actual image or fake image
+        $check = getimagesize($_FILES["event_image"]["tmp_name"]);
+        if ($check === false) {
+            $message = '<div style="color: red;">File is not an image.</div>';
+        } else {
+            // Check file size (e.g., max 5MB)
+            if ($_FILES["event_image"]["size"] > 5000000) { // 5MB in bytes
+                $message = '<div style="color: red;">Sorry, your file is too large. Max 5MB.</div>';
+            }
+            // Allow certain file formats
+            if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif" ) {
+                $message = '<div style="color: red;">Sorry, only JPG, JPEG, PNG & GIF files are allowed.</div>';
+            }
+
+            // If no error message yet, attempt to upload
+            if (empty($message)) {
+                if (move_uploaded_file($_FILES["event_image"]["tmp_name"], $target_file)) {
+                    $imageFilename = $unique_filename; // Save only the unique filename to the database
+                } else {
+                    $message = '<div style="color: red;">Sorry, there was an error uploading your file.</div>';
+                }
+            }
+        }
+    }
+    // --- End Image Upload Handling ---
+
+
+    // Simple validation for text fields
     if (empty($eventName) || empty($eventDetail) || empty($eventDate) || empty($category)) {
-        $message = '<div style="color: red;">All fields are required!</div>';
-    } else {
+        $message = '<div style="color: red;">All text fields are required!</div>';
+    }
+    // Only proceed with DB insert if no error messages accumulated
+    else if (empty($message)) {
         // Prepare an insert statement
-        $sql = "INSERT INTO blog (event_name, event_detail, event_date, category) VALUES (?, ?, ?, ?)";
+        // Added image_filename to the insert query
+        $sql = "INSERT INTO blog (event_name, event_detail, event_date, category, image_filename) VALUES (?, ?, ?, ?, ?)";
 
         if ($stmt = $conn->prepare($sql)) {
             // Bind parameters
-            $stmt->bind_param("ssss", $eventName, $eventDetail, $eventDate, $category);
+            // Added 's' for image_filename (string)
+            $stmt->bind_param("sssss", $eventName, $eventDetail, $eventDate, $category, $imageFilename);
 
             // Attempt to execute the prepared statement
             if ($stmt->execute()) {
                 $message = '<div style="color: green;">Event added successfully!</div>';
-                // Clear form fields after successful submission (optional)
-                // Note: Values in inputs are now reset via PHP ternary operators below
+                // Clear POST data to reset form
+                $_POST = array();
             } else {
                 $message = '<div style="color: red;">Error: Could not execute query. ' . $stmt->error . '</div>';
             }
@@ -85,12 +125,16 @@ $conn->close();
         input[type="text"],
         input[type="date"],
         textarea,
-        select { /* Added select here */
+        select {
             width: calc(100% - 22px);
             padding: 10px;
             margin-bottom: 15px;
             border: 1px solid #ccc;
             border-radius: 4px;
+        }
+        input[type="file"] {
+            width: 100%; /* Adjust as needed */
+            margin-bottom: 15px;
         }
         textarea { resize: vertical; min-height: 100px; }
         button {
@@ -112,8 +156,7 @@ $conn->close();
     <div class="container">
         <h2>Add New Event</h2>
         <div class="message"><?php echo $message; ?></div>
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-            <label for="event_name">Event Name:</label>
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" enctype="multipart/form-data"> <label for="event_name">Event Name:</label>
             <input type="text" id="event_name" name="event_name" value="<?php echo isset($_POST['event_name']) ? htmlspecialchars($_POST['event_name']) : ''; ?>" required>
 
             <label for="event_detail">Event Detail:</label>
@@ -133,7 +176,8 @@ $conn->close();
                 <?php endforeach; ?>
             </select>
 
-            <button type="submit">Add Event</button>
+            <label for="event_image">Event Image:</label>
+            <input type="file" id="event_image" name="event_image" accept="image/jpeg, image/png, image/gif"> <button type="submit">Add Event</button>
         </form>
     </div>
 </body>
