@@ -18,6 +18,42 @@ WEBSITE: https://themefisher.com
 TWITTER: https://twitter.com/themefisher
 FACEBOOK: https://www.facebook.com/themefisher
 -->
+<?php
+// Database connection details - IMPORTANT: Replace with your actual credentials
+define('DB_SERVER', 'localhost'); // Usually 'localhost'
+define('DB_USERNAME', 'biruktzw_yonas'); // Your database username
+define('DB_PASSWORD', 'Biruk@123'); // Your database password
+define('DB_NAME', 'biruktzw_biruktransport'); // The database name you created
+
+// Attempt to connect to MySQL database
+$conn = new mysqli(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+
+// Check connection
+if ($conn === false) {
+    die("ERROR: Could not connect. " . $conn->connect_error);
+}
+
+$events = []; // Initialize an empty array to store events
+
+// SQL query to fetch events, ordered by event_date (upcoming first)
+// You might add WHERE event_date >= CURDATE() to only show future events
+$sql = "SELECT id, event_name, event_detail, event_date, category FROM blog ORDER BY event_date DESC";
+
+if ($result = $conn->query($sql)) {
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            $events[] = $row;
+        }
+        $result->free(); // Free result set
+    }
+} else {
+    echo "ERROR: Could not able to execute $sql. " . $conn->error;
+}
+
+// Close connection
+$conn->close();
+?>
+
 
 <!DOCTYPE html>
 <html lang="zxx">
@@ -49,7 +85,7 @@ FACEBOOK: https://www.facebook.com/themefisher
 <!--End Main Header -->
 
 <!--Page Title-->
-<section class="page-title text-center" style="background-image:url(images/background/3.jpg);">
+<section class="page-title text-center" style="background-image:url(images/blog/blog.jpg);">
     <div class="container">
         <div class="title-text">
             <h1>Blog</h1>
@@ -71,84 +107,37 @@ FACEBOOK: https://www.facebook.com/themefisher
       <div class="col-lg-9">
         <div class="left-side">
           <div class="item-holder">
-            <div class="image-box">
-              <figure>
-                <a href="blog-details.php"><img loading="lazy" class="img-fluid" src="images/blog/5.jpg" alt=""></a>
-              </figure>
+            <div class="image-box">     
+              <?php if (!empty($events)): ?>
+            <div class="event-list content-text" >
+                <?php foreach ($events as $event): ?>
+                    <div class="event-card">
+                        <a href="event_detail.php?id=<?php echo $event['id']; ?>"><h3><?php echo htmlspecialchars($event['event_name']); ?></h3></a>
+                        <div class="meta">
+                            <strong>Date:</strong> <?php echo date('F j, Y', strtotime($event['event_date'])); ?> |
+                            <strong>Category:</strong> <?php echo htmlspecialchars($event['category']); ?>
+                        </div>
+                        <p>
+                            <?php
+                            // Display a snippet of the detail
+                            $snippet = strip_tags($event['event_detail']); // Remove any HTML for snippet
+                            if (strlen($snippet) > 150) {
+                                $snippet = substr($snippet, 0, 150) . '...';
+                            }
+                            echo htmlspecialchars($snippet);
+                            ?>
+                        </p>
+                        <a href="event_detail.php?id=<?php echo $event['id']; ?>" class="btn-style-one">Read More</a><hr>
+                    </div>
+                <?php endforeach; ?>
             </div>
-            <div class="content-text">
-              <a href="blog-details.php">
-                <h4>A lesson in Surgery Preparedness - From Hurricane Season</h4>
-              </a>
-              <span>By Donult Trum / 02 January 2020</span>
-              <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Sed porttitor lectus nibh.
-                Curabitur aliquet quam
-                id dui posuere blandit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
-              <div class="link-btn">
-                <a href="blog-details.php" class="btn-style-one">read more</a>
-              </div>
-            </div>
-          </div>
-          <div class="item-holder">
-            <div class="image-box">
-              <figure>
-                <a href="blog-details.php"><img loading="lazy" class="img-fluid" src="images/blog/6.jpg" alt=""></a>
-              </figure>
-            </div>
-            <div class="content-text">
-              <a href="blog-details.php">
-                <h4>To support patients recovery and improve their experiences of care.</h4>
-              </a>
-              <span>By James Anderson / 08 January 2020</span>
-              <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec sollicitudin molestie malesuada.
-                Nulla porttitor accumsan
-                tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
-              <div class="link-btn">
-                <a href="blog-details.php" class="btn-style-one">read more</a>
-              </div>
-            </div>
-          </div>
-          <div class="item-holder">
-            <div class="image-box">
-              <figure>
-                <a href="blog-details.php"><img loading="lazy" class="img-fluid" src="images/blog/7.jpg" alt=""></a>
-              </figure>
-            </div>
-            <div class="content-text">
-              <a href="blog-details.php">
-                <h4>A lesson in Surgery Preparedness - From Hurricane Season</h4>
-              </a>
-              <span>By Garry Moe / 12 January 2020</span>
-              <p>Sed porttitor lectus nibh. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
-                Quisque velit nisi, pretium
-                ut lacinia in, elementum id enim. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
-              </p>
-              <div class="link-btn">
-                <a href="blog-details.php" class="btn-style-one">read more</a>
-              </div>
-            </div>
-          </div>
-          <div class="item-holder">
-            <div class="image-box">
-              <figure>
-                <a href="blog-details.php"><img loading="lazy" class="img-fluid" src="images/blog/8.jpg" alt=""></a>
-              </figure>
-            </div>
-            <div class="content-text">
-              <a href="blog-details.php">
-                <h4>To support patients recovery and improve their experiences of care.</h4>
-              </a>
-              <span>By Luis Morris / 25 January 2020</span>
-              <p>Proin eget tortor risus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.
-                Praesent sapien massa, convallis
-                a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
-              <div class="link-btn">
-                <a href="blog-details.php" class="btn-style-one">read more</a>
-              </div>
-            </div>
-          </div>
-
-          
+        <?php else: ?>
+            <p class="no-events">No events found at the moment. Please check back later!</p>
+        <?php endif; ?>
+    </div>
+    </div>
+        </div>
+                
           <div class="styled-pagination">
             <ul>
               <li><a class="prev" href="blog.php"><span class="fas fa-angle-left" aria-hidden="true"></span></a></li>
@@ -159,7 +148,7 @@ FACEBOOK: https://www.facebook.com/themefisher
             </ul>
           </div>
         </div>
-      </div>
+      
 
       <div class="col-lg-3">
         <div class="right-side">
@@ -185,18 +174,7 @@ FACEBOOK: https://www.facebook.com/themefisher
               <li><a href="blog.php">Dental <span>(2)</span></a></li>
             </ul>
           </div>
-          <div class="tag-list">
-            <div class="text-title">
-              <h6>Tags</h6>
-            </div>
-            <a href="blog.php">Dental</a>
-            <a href="blog.php">Root</a>
-            <a href="blog.php">Clean</a>
-            <a href="blog.php">Rehabilitation</a>
-            <a href="blog.php">Surgery</a>
-            <a href="blog.php">Doctor</a>
-            <a href="blog.php">Pediatric</a>
-          </div>
+          
         </div>
       </div>
     </div>
