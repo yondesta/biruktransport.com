@@ -187,7 +187,7 @@ $conn->close();
                         <div class="comment">
                             <strong><?php echo htmlspecialchars($comment['commenter_name']); ?></strong>
                             <span class="comment-date"><?php echo date('F j, Y, g:i a', strtotime($comment['created_at'])); ?></span>
-                            <p><?php echo nl2br(htmlspecialchars($comment['comment_text'])); ?></p>
+                            <p><?php echo nl2br(htmlspecialchars($comment['comment_text'])); ?></p><hr>
                         </div>
                     <?php endforeach; ?>
                 <?php else: ?>

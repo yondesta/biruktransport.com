@@ -18,7 +18,68 @@ WEBSITE: https://themefisher.com
 TWITTER: https://twitter.com/themefisher
 FACEBOOK: https://www.facebook.com/themefisher
 -->
+<?php
+// Database connection details - IMPORTANT: Replace with your actual credentials
+define('DB_SERVER', 'localhost'); // Usually 'localhost'
+define('DB_USERNAME', 'biruktzw_yonas'); // Your database username
+define('DB_PASSWORD', 'Biruk@123'); // Your database password
+define('DB_NAME', 'biruktzw_biruktransport'); // The database name you created
 
+// Attempt to connect to MySQL database
+$conn = new mysqli(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+
+// Check connection
+if ($conn === false) {
+    die("ERROR: Could not connect. " . $conn->connect_error);
+}
+
+$message = ''; // To store success or error messages
+
+
+// Process form submission when form is posted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Collect form data and sanitize
+    $appointtName = $conn->real_escape_string(trim($_POST['appname']));
+    $email = $conn->real_escape_string(trim($_POST['email']));
+    $phone = $conn->real_escape_string(trim($_POST['phone']));
+    $appointsubject = $conn->real_escape_string(trim($_POST['subject']));
+    $appoint_date = $conn->real_escape_string(trim($_POST['appdate']));
+    $appmessage = $conn->real_escape_string(trim($_POST['message']));
+
+  
+    // Simple validation for text fields
+    if (empty($appointtName) || empty($email) || empty($phone) || empty($appointsubject) || empty($appoint_date) || empty($appmessage)) {
+        $message = '<div style="color: red;">All text fields are required!</div>';
+    }
+    // Only proceed with DB insert if no error messages accumulated
+    else if (empty($message)) {
+        // Prepare an insert statement
+        // Added image_filename to the insert query
+        $sql = "INSERT INTO appointment (appoint_name, phone, email, appoint_date, service_type,  message) VALUES (?, ?, ?, ?, ?, ?)";
+
+        if ($stmt = $conn->prepare($sql)) {
+            // Bind parameters
+            $stmt->bind_param("ssssss", $appointtName, $phone, $email, $appoint_date, $appointsubject,  $appmessage);
+
+            // Attempt to execute the prepared statement
+            if ($stmt->execute()) {
+                $message = '<div style="color: green;">Thank you for contacting us your appointment is  ' . $appoint_date . '</div>';
+                // Clear POST data to reset form
+                $_POST = array();
+            } else {
+                $message = '<div style="color: red;">Error: Could not execute query. ' . $stmt->error . '</div>';
+            }
+            // Close statement
+            $stmt->close();
+        } else {
+            $message = '<div style="color: red;">Error: Could not prepare query. ' . $conn->error . '</div>';
+        }
+    }
+}
+
+// Close connection before HTML output
+$conn->close();
+?>
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
@@ -76,14 +137,15 @@ FACEBOOK: https://www.facebook.com/themefisher
           <div class="section-title">
             <h3>Request <span>Appointment</span></h3>
           </div>
-          <form name="contact_form" class="default-form contact-form" action="!#" method="post">
+          <div class="message"><?php echo $message; ?></div>
+          <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" id="contact-form" class="row">
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                  <input class="form-control" type="text" name="Name" placeholder="Name" required="">
+                  <input class="form-control" type="text" name="appname" placeholder="Name" required>
                 </div>
                 <div class="form-group">
-                  <input class="form-control" type="email" name="Email" placeholder="Email" required="">
+                  <input class="form-control" type="email" name="email" placeholder="Email" required>
                 </div>
                 <div class="form-group">
                   <select class="form-control" name="subject">
@@ -96,16 +158,16 @@ FACEBOOK: https://www.facebook.com/themefisher
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <input class="form-control" type="text" name="Phone" placeholder="Phone" required="">
+                  <input class="form-control" type="text" name="phone" placeholder="Phone" required>
                 </div>
                 <div class="form-group">
-                  <input class="form-control" type="text" name="Date" placeholder="Date" required="" id="datepicker" autocomplete="off">
+                  <input type="date" id="appdate" name="appdate" class="form-control" value="<?php echo isset($_POST['event_date']) ? htmlspecialchars($_POST['appdate']) : ''; ?>"  placeholder="Date"  id="datepicker" autocomplete="off" required>
                   <i class="fa fa-calendar" aria-hidden="true"></i>
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="form-group">
-                  <textarea class="form-control" name="form_message" placeholder="Your Message" required=""></textarea>
+                  <textarea class="form-control" name="message" placeholder="Your Message" required=""></textarea>
                 </div>
                 <div class="form-group text-center">
                   <button type="submit" class="btn-style-one">submit now</button>

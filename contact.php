@@ -21,8 +21,67 @@ FACEBOOK: https://www.facebook.com/themefisher
 
 <!DOCTYPE html>
  
- <?php include('form_process.php')?>
- 
+<?php
+// Database connection details - IMPORTANT: Replace with your actual credentials
+define('DB_SERVER', 'localhost'); // Usually 'localhost'
+define('DB_USERNAME', 'biruktzw_yonas'); // Your database username
+define('DB_PASSWORD', 'Biruk@123'); // Your database password
+define('DB_NAME', 'biruktzw_biruktransport'); // The database name you created
+
+// Attempt to connect to MySQL database
+$conn = new mysqli(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+
+// Check connection
+if ($conn === false) {
+    die("ERROR: Could not connect. " . $conn->connect_error);
+}
+
+$message = ''; // To store success or error messages
+
+
+// Process form submission when form is posted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Collect form data and sanitize
+    $commentName = $conn->real_escape_string(trim($_POST['name']));
+    $email = $conn->real_escape_string(trim($_POST['email']));
+    $comsubject = $conn->real_escape_string(trim($_POST['subject']));
+    $phone = $conn->real_escape_string(trim($_POST['phone']));
+    $comessage = $conn->real_escape_string(trim($_POST['message']));
+
+  
+    // Simple validation for text fields
+    if (empty($commentName) || empty($email) || empty($comsubject) || empty($phone) || empty($comessage)) {
+        $message = '<div style="color: red;">All text fields are required!</div>';
+    }
+    // Only proceed with DB insert if no error messages accumulated
+    else if (empty($message)) {
+        // Prepare an insert statement
+        // Added image_filename to the insert query
+        $sql = "INSERT INTO contact_comment (commenter_name, email, comment_subject, phone, message) VALUES (?, ?, ?, ?, ?)";
+
+        if ($stmt = $conn->prepare($sql)) {
+            // Bind parameters
+            $stmt->bind_param("sssss", $commentName, $email, $comsubject, $phone, $comessage);
+
+            // Attempt to execute the prepared statement
+            if ($stmt->execute()) {
+                $message = '<div style="color: green;">Message Sent successfully and Thank you for contacting us!</div>';
+                // Clear POST data to reset form
+                $_POST = array();
+            } else {
+                $message = '<div style="color: red;">Error: Could not execute query. ' . $stmt->error . '</div>';
+            }
+            // Close statement
+            $stmt->close();
+        } else {
+            $message = '<div style="color: red;">Error: Could not prepare query. ' . $conn->error . '</div>';
+        }
+    }
+}
+
+// Close connection before HTML output
+$conn->close();
+?>  
 
 <html lang="zxx">
 <head>
@@ -112,19 +171,19 @@ FACEBOOK: https://www.facebook.com/themefisher
       <div class="col-lg-8 col-md-7">
         <div class="contact-form">
           <!-- contact form start -->
-          
-          <form id="contact-form" action="<?= htmlspecialchars($_SERVER["PHP_SELF"]) ?>" class="row"  method="POST">
+          <div class="message"><?php echo $message; ?></div>
+          <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" id="contact-form" class="row"  >
             <!-- name -->
             <div class="col-lg-6">
-              <input type="text" name="name" value="<?= $name ?>" class="form-control main" placeholder="Name" required>
+              <input type="text" name="name" class="form-control main" placeholder="Name" required>
             </div>
             <!-- email -->
             <div class="col-lg-6">
-              <input type="email" name="email" value="<?= $email ?>" class="form-control main" placeholder="Email" required>
+              <input type="email" name="email" class="form-control main" placeholder="Email" required>
             </div>
             <!-- Subject -->
             <div class="col-lg-6">
-              <input type="text" name="subject" value="<?= $subject ?>" class="form-control main" placeholder="Subject" required>
+              <input type="text" name="subject" class="form-control main" placeholder="Subject" required>
             </div>
             <!-- phone -->
             <div class="col-lg-6">
@@ -132,14 +191,13 @@ FACEBOOK: https://www.facebook.com/themefisher
             </div>
             <!-- message -->
             <div class="col-lg-12">
-              <textarea name="message" value="<?= $message ?>" rows="10" class="form-control main" placeholder="Your message"></textarea>
+              <textarea name="message"  rows="10" class="form-control main" placeholder="Your message"></textarea>
             </div>
             <!-- submit button -->
             <div class="col-md-12 text-right">
               <button class="btn btn-style-one" type="submit">Send Message</button>
             </div>
           </form>
-          <div class="success"><?= $success ?></div>
           <!-- contact form end -->
         </div>
       </div>

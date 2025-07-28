@@ -28,13 +28,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit_comment'])) {
         $comment_message = '<div style="color: red;">Please fill in all required comment fields.</div>';
     } else {
         // Prepare an insert statement for comments
-        $sql_insert_comment = "INSERT INTO event_comments (event_id, commenter_name, commenter_email, comment_text) VALUES (?, ?, ?, ?)";
+        $sql_insert_comment = "INSERT INTO event_comments (event_id, comment_author, comment_email, comment_content) VALUES (?, ?, ?, ?)";
         if ($stmt_comment = $conn->prepare($sql_insert_comment)) {
             $stmt_comment->bind_param("isss", $event_id, $commenter_name, $commenter_email, $comment_text);
             if ($stmt_comment->execute()) {
                 $comment_message = '<div style="color: green;">Your comment has been submitted successfully!</div>';
                 // Redirect to self to prevent form resubmission and clear POST data
-                header("Location: event_detail.php?id=" . $event_id . "&comment_status=success");
+                header("Location: blog_details.php?id=" . $event_id . "&comment_status=success");
                 exit();
             } else {
                 $comment_message = '<div style="color: red;">Error submitting comment: ' . $stmt_comment->error . '</div>';
@@ -50,6 +50,48 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit_comment'])) {
 if (isset($_GET['comment_status']) && $_GET['comment_status'] == 'success') {
     $comment_message = '<div style="color: green;">Your comment has been submitted successfully!</div>';
 }
+
+// --- Get Total Number of Events (for pagination calculation, considering category AND search filter) ---
+$total_events_sql = "SELECT COUNT(id) AS total_count FROM blog";
+$total_events_params = [];
+$total_events_types = "";
+$where_clauses = [];
+
+if (!empty($selected_category)) {
+    $where_clauses[] = "category = ?";
+    $total_events_params[] = $selected_category;
+    $total_events_types .= "s";
+}
+if (!empty($search_query)) {
+    $where_clauses[] = "(event_name LIKE ? OR event_detail LIKE ?)";
+    $total_events_params[] = "%" . $search_query . "%";
+    $total_events_params[] = "%" . $search_query . "%";
+    $total_events_types .= "ss"; // two 's' for two LIKE parameters
+}
+
+if (!empty($where_clauses)) {
+    $total_events_sql .= " WHERE " . implode(" AND ", $where_clauses);
+}
+
+if ($stmt_total = $conn->prepare($total_events_sql)) {
+    if (!empty($total_events_params)) {
+        // Correct way to bind parameters when using call_user_func_array with references
+        $bind_total_params = [];
+        $bind_total_params[] = &$total_events_types;
+        foreach ($total_events_params as $key => &$value) {
+            $bind_total_params[] = &$value;
+        }
+        call_user_func_array([$stmt_total, 'bind_param'], $bind_total_params);
+    }
+    $stmt_total->execute();
+    $total_events_result = $stmt_total->get_result();
+    $total_events_row = $total_events_result->fetch_assoc();
+    $total_events = $total_events_row['total_count'];
+    $stmt_total->close();
+} else {
+    echo "ERROR: Could not prepare total events query. " . $conn->error;
+}
+
 
 
 // --- Fetch Event Details ---
@@ -77,7 +119,7 @@ if (isset($_GET['id']) && !empty(trim($_GET['id']))) {
 
     // --- Fetch Comments for this Event ---
     if ($event) { // Only fetch comments if an event was found
-        $sql_comments = "SELECT commenter_name, comment_text, created_at FROM event_comments WHERE event_id = ? ORDER BY created_at DESC";
+        $sql_comments = "SELECT comment_author, comment_content, comment_date FROM event_comments WHERE event_id = ? ORDER BY comment_date DESC";
         if ($stmt_comments = $conn->prepare($sql_comments)) {
             $stmt_comments->bind_param("i", $event_id);
             if ($stmt_comments->execute()) {
@@ -94,7 +136,7 @@ if (isset($_GET['id']) && !empty(trim($_GET['id']))) {
         }
     }
 } else {
-    echo "<p style='text-align:center; color:red;'>No event ID provided. Please select an event from the <a href='events.php'>events list</a>.</p>";
+    echo "<p style='text-align:center; color:red;'>No event ID provided. Please select an event from the <a href='blog.php'>events list</a>.</p>";
 }
 
 // Close connection
@@ -148,64 +190,70 @@ $conn->close();
 <!--End Page Title-->
 
 <!-- Contact Section -->
-<section class="blog-section section style-four style-five">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-9">
-        <div class="left-side">
-          <div class="item-holder">
+<section class="service-tab-section section">
+  <div class="outer-box clearfix">
+    <div class="container">
+      <div class="service-box tab-pane fade show active" id="dormitory">
+       <div class="row">
+        <div class="col-lg-6">
+             <?php if (!empty($event['image_filename'])): ?>
+                    <img src="images/uploads/<?php echo htmlspecialchars($event['image_filename']); ?>"
+                         alt="<?php echo htmlspecialchars($event['event_name']); ?>"
+                         class="event-image">
+                <?php endif; ?>
+        </div>
+        <div class="col-lg-6">
+          <div class="contents">
+            <div class="section-title">     
+              <h4> <?php if ($event): ?>
+              <?php echo htmlspecialchars($event['event_name']); ?></h4>
+            </div>
             
-            <div class="content-text">
-        <?php if ($event): ?>
-            <h1><?php echo htmlspecialchars($event['event_name']); ?></h1>
-            <div class="meta">
-                <strong>Date:</strong> <?php echo date('F j, Y', strtotime($event['event_date'])); ?> |
-                <strong>Category:</strong> <?php echo htmlspecialchars($event['category']); ?> |
-                <span title="Date Added">Added On: <?php echo date('F j, Y', strtotime($event['created_at'])); ?></span>
+                <div class="text">
+                    <strong>Date:</strong> <?php echo date('F j, Y', strtotime($event['event_date'])); ?> |
+                    <strong>Category:</strong> <?php echo htmlspecialchars($event['category']); ?> |
+                    <span title="Date Added">Added On: <?php echo date('F j, Y', strtotime($event['created_at'])); ?></span>
+                </div>
+                
+            <div class="text">
+                <p><?php echo nl2br(htmlspecialchars($event['event_detail'])); ?></p><hr>
             </div>
-
-            <?php if (!empty($event['image_filename'])): ?>
-                <img src="images/uploads/<?php echo htmlspecialchars($event['image_filename']); ?>"
-                     alt="<?php echo htmlspecialchars($event['event_name']); ?>"
-                     class="event-image">
-            <?php endif; ?>
-
-            <div class="event-detail">
-                <p><?php echo nl2br(htmlspecialchars($event['event_detail'])); ?></p>
-            </div>
-
-            <div class="comments-section">
-              
-                <h2>Comments</h2><hr>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          &nbsp;
+        </div>
+        <div class="col-lg-6">
+            <div class="comments-section">        
+               <hr> <h2>Comments</h2><hr>
                 <?php if (!empty($comments)): ?>
                     <?php foreach ($comments as $comment): ?>
-                        <div class="image-text">
-                            <h6><strong><?php echo htmlspecialchars($comment['commenter_name']); ?></strong>
-                            <span><?php echo date('F j, Y, g:i a', strtotime($comment['created_at'])); ?></span></h6>
-                            <p><?php echo nl2br(htmlspecialchars($comment['comment_text'])); ?></p>
+                        <div class="comment">
+                            <h6><strong><?php echo htmlspecialchars($comment['comment_author']); ?></strong>
+                            <span><?php echo date('F j, Y, g:i a', strtotime($comment['comment_date'])); ?></span></h6>
+                            <p><?php echo nl2br(htmlspecialchars($comment['comment_content'])); ?></p>
                         </div>
                     <?php endforeach; ?>
                 <?php else: ?>
                     <p class="no-comments">No comments yet. Be the first to comment!</p>
                 <?php endif; ?>
             </div>
-
+        
             <div class="comments-area">
                 <h3>Leave a Comment</h3>
                 <div class="message"><?php echo $comment_message; ?></div>
             <div class="form-area">
                 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) . '?id=' . htmlspecialchars($event['id']); ?>" class="default-form" method="post">
                 <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-md-5">
                     <div class="form-group">
                       <input type="hidden" name="event_id" value="<?php echo htmlspecialchars($event['id']); ?>">
                        
                       <input type="text" class="form-control" placeholder="Your Name" id="commenter_name" name="commenter_name" value="<?php echo isset($_POST['commenter_name']) ? htmlspecialchars($_POST['commenter_name']) : ''; ?>" required>
                     </div>
                   </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    
+                <div class="col-md-7">
+                  <div class="form-group">   
                     <input type="email" id="commenter_email" class="form-control email" placeholder="Your Email (optional)" name="commenter_email" value="<?php echo isset($_POST['commenter_email']) ? htmlspecialchars($_POST['commenter_email']) : ''; ?>">
                   </div>
                 </div>
@@ -220,46 +268,16 @@ $conn->close();
                     <button type="submit" class="btn-style-one" name="submit_comment">Post Comment</button>
                   </div>
                 </div>
+              </div>
                 </div>
                 </form>
-             </div>
-            </div>
-
-            <a href="blog.php" class="back-link">← Back to All Events</a>
-        <?php endif; ?>
-    </div>          
-         
-          </div>
+             </div> 
+        <div class="text-right"><a href="blog.php" class="btn-style-two">← Back to All Events</a></div>
+        <?php endif; ?></div>
+        </div>          
         </div>
-        
-        
+        </div>    
       </div>
-      <div class="col-lg-3">
-        <div class="right-side">
-          <div class="text-title">
-            <h6>Search</h6>
-          </div>
-          <div class="search-box">
-            <form method="post" action="index.php">
-              <input class="form-control" type="search" name="search" placeholder="Enter to Search" required="">
-            </form>
-          </div>
-          <div class="categorise-menu">
-            <div class="text-title">
-              <h6>Categories</h6>
-            </div>
-            <ul class="categorise-list">
-              <li><a href="blog.php">Pulmonary <span>(12)</span></a></li>
-              <li><a href="blog.php">Neurology <span>(22)</span></a></li>
-              <li><a href="blog.php">X - Ray <span>(18)</span></a></li>
-              <li><a href="blog.php">Cardiogram <span>(32)</span></a></li>
-              <li><a href="blog.php">Diagnostic <span>(21)</span></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </section>
 <!-- End Contact Section -->
 

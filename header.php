@@ -32,6 +32,7 @@
   
   <!-- Stylesheets -->
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
   
   <!--Favicon-->
   <link rel="icon" href="images/favicon.png" type="image/x-icon">
@@ -160,11 +161,14 @@
         <li class="nav-item @@appointment">
           <a class="nav-link" href="appointment.php">Appointment</a>
         </li>
-         <li class="nav-item @@appointment">
+         <li class="nav-item @@company_profile">
           <a class="nav-link" href="company_profile.php">Company Profile</a>
         </li>
         <li class="nav-item @@contact">
           <a class="nav-link" href="contact.php">Contact</a>
+        </li>
+        <li class="nav-item @@blog">
+          <a class="nav-link" href="blog.php">Blog</a>
         </li>
       </ul>
     </div>

@@ -1,61 +1,91 @@
-<?php 
+<?php
+// Enable error reporting for debugging (remove in production)
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
-// define variables and set to empty values
-$name_error = $email_error = "";
-$name = $email = $message = $success = $subject = $phone = $company = "";
+// Initialize variables
+$errors = [];
+$success = '';
+$name = $email = $message = $subject = $phone = $company = '';
 
-//form is submitted with POST method
+// Form submission handling
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  if (empty($_POST["name"])) {
-    $name_error = "Name is required";
-  } else {
-    $name = test_input($_POST["name"]);
-    // check if name only contains letters and whitespace
-    if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
-      $name_error = "Only letters and white space allowed"; 
-    }
-  }
+    // Sanitize and validate inputs
+    $name = sanitizeInput($_POST["name"] ?? '');
+    $email = sanitizeInput($_POST["email"] ?? '');
+    $phone = sanitizeInput($_POST["phone"] ?? '');
+    $company = sanitizeInput($_POST["company"] ?? '');
+    $subject = sanitizeInput($_POST["subject"] ?? '');
+    $message = sanitizeInput($_POST["message"] ?? '');
 
-  if (empty($_POST["email"])) {
-    $email_error = "Email is required";
-  } else {
-    $email = test_input($_POST["email"]);
-    // check if e-mail address is well-formed
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      $email_error = "Invalid email format"; 
+    // Validation
+    if (empty($name)) {
+        $errors['name'] = "Name is required";
+    } elseif (!preg_match("/^[a-zA-Z ]*$/", $name)) {
+        $errors['name'] = "Only letters and spaces allowed";
     }
-  }
-  
-  if (empty($_POST["message"])) {
-    $message = "";
-  } else {
-    $message = test_input($_POST["message"]);
-  }
-  
-  if ($name_error == '' and $email_error == ''){
-      $message_body = '';
-      unset($_POST['submit']);
-      foreach ($_POST as $key => $value){
-          $message_body .=  "$key: $value\n";
-      }
-      
-      $to = 'yonasdesta37@gmail.com';
-      $subject = $_POST['subject'];
-	  $from = $_POST['email'];
-	  $phone = $_POST['phone'];
-	  //$company = $_POST['company'];
-	  $body = "From: " . $name . "\r\n" . "Email: " . $email . "\r\n" . "Phone: " . $phone . "\r\n" . "\r\n" . $message;
-      if (mail($to, $subject, $body)){
-          $success = "Message sent, thank you for contacting us!";
-          $name = $email = $message = $subject = $phone = $company = '';
-      }
-  }
-  
+
+    if (empty($email)) {
+        $errors['email'] = "Email is required";
+    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $errors['email'] = "Invalid email format";
+    }
+
+    if (empty($subject)) {
+        $errors['subject'] = "Subject is required";
+    }
+
+    if (empty($message)) {
+        $errors['message'] = "Message is required";
+    }
+
+    // If no errors, send email
+    if (empty($errors)) {
+        require 'PHPMailer/src/Exception.php';
+        require 'PHPMailer/src/PHPMailer.php';
+        require 'PHPMailer/src/SMTP.php';
+
+        $mail = new PHPMailer\PHPMailer\PHPMailer(true);
+        
+        try {
+            // Server settings
+            $mail->isSMTP();
+            $mail->Host = 'smtp.biruktransport.com'; // Your SMTP server
+            $mail->SMTPAuth = true;
+            $mail->Username = 'info@test.biruktransport.com'; // SMTP username
+            $mail->Password = 'Test@123.Info'; // SMTP password
+            $mail->SMTPSecure = 'ssl'; // Encryption: 'tls' or 'ssl'
+            $mail->Port = 465; // TCP port
+
+            // Recipients
+            $mail->setFrom('noreply@biruktransport.com', 'Website Contact Form');
+            $mail->addAddress('info@biruktransport.com'); // Recipient
+            $mail->addReplyTo($email, $name);
+
+            // Content
+            $mail->isHTML(false);
+            $mail->Subject = "Contact Form: $subject";
+            $mail->Body = "Name: $name\n" .
+                         "Email: $email\n" .
+                         "Phone: $phone\n" .
+                         "Company: $company\n\n" .
+                         "Message:\n$message";
+
+            $mail->send();
+            $success = "Your message has been sent successfully!";
+            
+            // Clear form fields
+            $name = $email = $message = $subject = $phone = $company = '';
+        } catch (Exception $e) {
+            $errors['mail'] = "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+        }
+    }
 }
 
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
+function sanitizeInput($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
 }
+?>

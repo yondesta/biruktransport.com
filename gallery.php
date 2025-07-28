@@ -88,7 +88,7 @@ FACEBOOK: https://www.facebook.com/themefisher
         <div class="video-gallery-item">
           <div class="image-holder">
             <img loading="lazy" src="videos/three.jpg" class="img-fluid" alt="video-gallery">
-            <a data-fancybox href="videos/video.mp4">
+            <a data-fancybox href="videos/about.mp4">
               <i class="fa fa-play"></i>
             </a>
           </div>
