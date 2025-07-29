@@ -170,14 +170,14 @@ $conn->close();
 				<div class="image-content">
 					<div class="section-title text-center">
 						<h3>Best Features <span>of Our Transport</span></h3>
-						<h4>In today's interconnected world, reliable transport is the backbone of successful trade. <br>At Biruk Transport, we specialize in providing comprehensive
+						<h5>In today's interconnected world, reliable transport is the backbone of successful trade. <br>At Biruk Transport, we specialize in providing comprehensive
             import and export transport solutions, <br>connecting your business to markets both across town and different region of the country.
-				</h4>
+				</h5>
             <hr>
-        <h4>The world of import and export can be complex, filled with transport hurdles, regulatory challenges, and tight deadlines. Don't let transport become a bottleneck for your business growth.
+        <h5>The world of import and export can be complex, filled with transport hurdles, regulatory challenges, and tight deadlines. Don't let transport become a bottleneck for your business growth.
             Biruk Transport offers a complete suite of transport services designed to overcome these challenges. From the first mile to the last, inland transport service,
             we provide robust solutions that ensure your goods move efficiently and securely.
-            We take the burden of transport off your shoulders, allowing you to focus on what you do best.</h4>
+            We take the burden of transport off your shoulders, allowing you to focus on what you do best.</h5>
           </div>
 
 					
